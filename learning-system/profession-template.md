@@ -100,7 +100,7 @@ Do not invent references. Mark inaccessible sources and unresolved questions.
 
 ## 10. Learning records
 
-Specify profession-specific evidence and artifacts, such as lesson records, casebook entries, calculations, reports, simulations and assessment results. Link them to the shared Learning Log and Competency Register; do not duplicate the entire central history.
+Specify profession-specific evidence and artifacts, such as lesson records, casebook entries, calculations, reports, simulations and assessment results. Link them only to this repository's local Learning Log and Competency Register when the module is maintained here. Do not link, copy or import records from independent projects.
 
 ## 11. Maintenance
 
@@ -120,5 +120,5 @@ Define:
 - [ ] Jurisdictional differences are explicit.
 - [ ] Practice and assessments test real capability.
 - [ ] Evidence requirements prevent inflated competency claims.
-- [ ] Links to Core and shared records are correct.
+- [ ] Links to Core and this repository's local records are correct.
 - [ ] User has reviewed and approved the proposed module.
