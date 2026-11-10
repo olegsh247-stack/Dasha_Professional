@@ -4,8 +4,8 @@
   "repository": "olegsh247-stack/Dasha_Professional",
   "current_source": {
     "branch": "main",
-    "approved_baseline_commit": "2a97a0af5ef538f7561677c063121008422d7f77",
-    "note": "Core and Professional Learning System v1.0.1 refinements merged to main on 2026-11-10."
+    "approved_baseline_commit": "2ee9fb8cdb80c8b797356e44d36974c340271ea5",
+    "note": "Approved v1.0.1 release baseline finalized in PR #4 on 2026-11-10. PR #5 added repository quality automation afterward without changing approved Core or Learning System component contents."
   },
   "release": {
     "version": "1.0.1",
