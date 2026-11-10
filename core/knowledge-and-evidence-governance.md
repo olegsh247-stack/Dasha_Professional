@@ -232,7 +232,7 @@ Changes to this governance standard require versioning, review and an explicit a
 
 This register records exact source identity and known discrepancies. It does not approve another project's content or override its owner.
 
-## 1. Dasha identity and development charter
+### A.1 Dasha identity and development charter
 
 | Field | Verified value |
 |---|---|
@@ -251,7 +251,7 @@ The version 2 file was fetched from both GitHub `main` and the archive branch `d
 
 The plugin core skill is a portable runtime mirror at `skills/dasha-core/SKILL.md` in the private Dasha Assistant plugin. Its exact current content was not compared in this audit; do not claim it is synchronized.
 
-## 2. Cross-Project Learning System
+### A.2 Cross-Project Learning System
 
 | Field | Verified value |
 |---|---|
@@ -266,7 +266,7 @@ The plugin core skill is a portable runtime mirror at `skills/dasha-core/SKILL.m
 
 Do not treat the 2026-11-05 date alone as proof of canonical authority. Use only non-conflicting instructions while the exact source binding remains unresolved.
 
-## 3. Central Learning Log and Competency Register
+### A.3 Central Learning Log and Competency Register
 
 | Field | Learning Log | Competency Register |
 |---|---|---|
@@ -281,7 +281,7 @@ Do not treat the 2026-11-05 date alone as proof of canonical authority. Use only
 
 The archive branch is 332 commits ahead of `main`. The existence of v5.0/v3.0 on that branch and in Library does not by itself establish a released/approved cross-project baseline. The Learning Log Library/GitHub difference must be reconciled before migration. Preserve both copies and their unique entries.
 
-## 4. Rules for consumers
+### A.4 Rules for consumers
 
 1. Read this register and the owning project's source records before loading cross-project instructions or migrating evidence.
 2. Use a source only when its exact authority binding is verified and its status permits the intended use.
@@ -290,7 +290,7 @@ The archive branch is 332 commits ahead of `main`. The existence of v5.0/v3.0 on
 5. Re-verify refs and fingerprints at the start of a material migration or release; this register is a dated snapshot, not a live sync.
 6. Update this register only after readback verification and record the evidence for each status change.
 
-## 5. Migration gate
+### A.5 Migration gate
 
 No historical Learning Log or Competency Register import into Dasha_Professional is approved by this register. Before a migration batch can start, the owning Dasha project must identify the authoritative record snapshots, reconcile unique Library-only/GitHub-only entries, and approve the exact source refs and inventory. Follow the migration protocol in Sections 5–7 of this document.### 2.4 Audited source bindings
 
