@@ -5,7 +5,7 @@
   "current_source": {
     "branch": "main",
     "approved_baseline_commit": "f4db2a6e6c9b748dc512d8657a817b176e50ffb8",
-    "note": "Approved v1.0.2 release metadata was finalized in PR #10. The post-merge corrective commit 7ae2dae51d6c644ec3d5beeb072a4feeae5c27d1 is part of the same v1.0.2 mainline; the approved baseline remains the PR #10 merge commit. Component fingerprints identify the exact approved files on main."
+    "note": "Approved v1.0.2 release metadata was finalized in PR #10. Subsequent corrective commits on main are part of the same v1.0.2 line; the approved baseline remains the PR #10 merge commit. Component fingerprints identify the exact current approved files on main."
   },
   "release": {
     "version": "1.0.2",
