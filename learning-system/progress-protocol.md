@@ -53,7 +53,7 @@ Maintain one row per competency and participant, where appropriate:
 - **Competency ID and name**
 - **Profession/module**
 - **Participant**
-- **State:** not started / studied / in progress / practiced / demonstrated achievement / open question
+- **State:** not started / studied / in progress / practiced / demonstrated achievement / open question / future direction
 - **Evidence references**
 - **Assessment method and date**
 - **Confidence/limitations**
