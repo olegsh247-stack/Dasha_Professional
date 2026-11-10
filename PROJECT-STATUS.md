@@ -28,7 +28,7 @@
 | Shared Learning Log | — | Active | Baseline program decision recorded; detailed historical lesson records have not been imported. |
 | Competency Register | — | Active | Initialized; no imported or assessed competency entries yet. |
 | Repository quality checks | — | Active | Markdown lint and link validation run on pushes, pull requests and manual dispatch. |
-| `main` branch protection | — | Pending configuration | The current GitHub integration exposes read access but no branch-protection/ruleset write action. Configure PR-only and required CI checks in GitHub repository settings; no mandatory review is specified. |
+| `main` branch protection | — | Not enabled by design | No mandatory branch protection/ruleset is configured. This is an intentional usability decision: avoid restrictive controls that previously disrupted the owner's workflow. CI continues to run on pushes and pull requests; PRs are the preferred change path, not a technical requirement. |
 
 ## Source-of-truth rules
 
@@ -40,4 +40,8 @@
 
 ## Change control
 
-Changes to approved architecture are proposed on a dedicated branch and reviewed through a pull request. The PR must identify scope, affected files, verification performed and any exclusions. Merging requires explicit user authorization. No production deployment is implied by repository approval.
+1. Use a dedicated branch and pull request as the preferred path for planned changes to approved architecture.
+2. Direct changes to `main` remain permitted when the owner considers them necessary; no branch rule blocks them.
+3. CI runs on pushes and pull requests. Both Markdown lint and link validation should pass before a change is considered complete. Investigate and rerun transient external-service failures rather than silently disabling checks.
+4. A PR must identify scope, affected files, verification performed and any exclusions. Merging requires explicit user authorization when the assistant is carrying out the merge.
+5. No production deployment is implied by repository approval.
