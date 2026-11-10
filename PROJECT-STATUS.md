@@ -44,7 +44,6 @@ Included:
 
 No historical records were imported, no competency levels were changed, and no edits were made to the separate Dasha repository or Library. Unresolved external source bindings remain unresolved and must not be treated as approved migration baselines.
 
-
 ## v1.1.1 release record
 
 Approved on 2026-11-10 as a patch release. This release corrects the Appendix A.3 source inventory using exact GitHub blob fingerprints and current Library readbacks.
