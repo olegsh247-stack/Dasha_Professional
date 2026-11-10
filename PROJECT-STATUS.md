@@ -2,8 +2,8 @@
 
 **Repository:** `olegsh247-stack/Dasha_Professional`  
 **Current approved source:** `main`  
-**Approved baseline:** 2026-11-10  
-**Operational consistency update:** proposed in PR from `fix/learning-system-operational-consistency`; not approved until merged.
+**Current release:** v1.0.1  
+**Approved:** 2026-11-10
 
 ## Lifecycle definitions
 
@@ -19,9 +19,10 @@
 | Component | Version | Status | Notes |
 |---|---:|---|---|
 | Core | 1.0.0 | Approved | First edition approved 2026-11-10 and merged to `main` in PR #2. |
-| Professional Learning System | 1.0.0 | Approved | First edition approved 2026-11-10 and merged to `main` in PR #2. |
-| Startup and progress operational refinements | 1.0.1 proposal | Pending approval | This PR corrects stale branch references, clarifies source provenance, introduces a compact startup path and defines a complete unsaved-record fallback. |
-| Risk Management profession module | — | Not established on `main` | Historical files were observed on `feat/universal-learning-system`, deliberately excluded from PR #2. Their professional content and approval status are not assessed by this architecture status page. Verify in the profession's own workflow before use. |
+| Professional Learning System | 1.0.1 | Approved | v1.0.0 baseline plus operational consistency refinements merged through PR #3 on 2026-11-10. |
+| Universal Learning Skill | 1.0.0 | Approved | No profession-specific curriculum is embedded in the Skill. |
+| Startup and progress protocol | 1.0.1 | Approved | Current-source guidance, compact two-level loading and complete unsaved-record fallback. |
+| Risk Management profession module | — | Not established on `main` | Historical files were observed on `feat/universal-learning-system`, deliberately excluded from PR #2 and PR #3. Their professional content and approval status are not assessed here. Verify in the profession's own workflow before use. |
 | Other profession modules | — | Not started | No approved modules are indexed on `main`. |
 | Integrations registry | — | Planned | No `integrations/` directory or registry currently exists. |
 | Shared Learning Log | — | Active | Baseline program decision recorded; detailed historical lesson records have not been imported. |
