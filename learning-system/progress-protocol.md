@@ -6,7 +6,7 @@ Preserve learning continuity across separate chats and professions without repea
 
 ## 2. Governing rules and source-of-truth hierarchy
 
-The Dasha charter and Cross-Project Learning System in Library, together with the approved Core in this repository, govern general identity, learning conduct, knowledge transfer and recordkeeping. They are governing instructions, not substitutes for project facts or professional evidence.
+The Dasha charter and Cross-Project Learning System govern identity and cross-project learning only at their exact approved revisions. Verify repository/system, path, ref, version, status and fingerprint; Library/plugin copies are mirrors unless explicitly designated canonical. Approved Core and [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md) govern shared recordkeeping. If copies conflict or no approved ref is identifiable, record the conflict and pause only dependent actions; do not silently choose the newest copy.
 
 For factual claims, project decisions and learning evidence, use the most specific authoritative source:
 
@@ -24,11 +24,12 @@ If two authoritative sources conflict, surface the conflict and do not silently 
 Load the compact orientation set first:
 
 1. current `PROJECT-STATUS.md` and `manifest.json`;
-2. the two governing Library documents, if available;
-3. `core/README.md` and only the Core documents relevant to the current lesson;
-4. `learning-system/SKILL.md` and this protocol;
-5. the selected profession's current README, approved curriculum and profession-specific Skill;
-6. relevant profession-specific records and the latest relevant entries in the shared Learning Log and Competency Register.
+2. the exact approved revisions of the Dasha charter and Cross-Project Learning System, using the source register and fingerprint; compare Library/plugin mirrors and report any mismatch;
+3. `core/knowledge-and-evidence-governance.md`;
+4. `core/README.md` and only the Core documents relevant to the current lesson;
+5. `learning-system/SKILL.md` and this protocol;
+6. the selected profession's current README, approved curriculum and profession-specific Skill;
+7. relevant profession-specific records and the latest relevant entries in the shared Learning Log and Competency Register.
 
 Load detailed lessons, source packs, casebooks and additional Core documents only when needed to teach, verify evidence or resolve a conflict. Never omit the authoritative curriculum or records that establish the continuation point.
 
@@ -58,12 +59,15 @@ Append one concise entry for each meaningful milestone:
 - **Profession/module:**
 - **Lesson or activity:**
 - **Participant:** user / Dasha / joint
+- **Learning State:** if applicable
+- **Evidence Level before → after:** E0–E5 or Not mapped
 - **Learning outcome:**
 - **Evidence or artifact:**
 - **Assessment and result:**
 - **Corrections / open questions:**
 - **Next step:**
-- **Saved at / source reference:**
+- **Saved at / source reference:** exact repository/path/ref/version/fingerprint where available
+- **Original event ID / migration batch:** if imported
 
 The log is chronological. Do not rewrite old entries merely to make the history look cleaner; record corrections as new events and preserve provenance.
 
@@ -74,8 +78,9 @@ Maintain one row per competency and participant, where appropriate:
 - **Competency ID and name**
 - **Profession/module**
 - **Participant**
-- **State:** not started / studied / in progress / practiced / demonstrated achievement / open question / future direction
-- **Evidence references**
+- **Learning State:** Not started / Studied / In progress / Practiced / Demonstrated achievement / Open question / Future direction
+- **Evidence Level:** E0 / E1 / E2 / E3 / E4 / E5 (or Not mapped)
+- **Evidence references and exact source provenance**
 - **Assessment method and date**
 - **Confidence/limitations**
 - **Next development step**
@@ -85,7 +90,7 @@ The register is a current snapshot, not a second narrative journal. Every demons
 
 ## 7. Evidence rules
 
-Distinguish reading, explanation, guided exercise, independent application, repeated performance under varied conditions, and external or independent assessment. A higher level requires stronger evidence. Keep Dasha's learning evidence separate from the user's.
+Learning State and Evidence Level are independent dimensions. Apply the E0–E5 minimum evidence criteria in `core/knowledge-and-evidence-governance.md`. Distinguish reading, explanation, guided exercise, independent application, repeatability and external review. Keep Dasha's evidence separate from the user's. Ratings, attendance, confidence and lesson counts do not promote an E-level.
 
 ## 8. End-of-session update
 
@@ -131,6 +136,8 @@ Before asking the user to restate a preference, background detail, prior decisio
 
 Transfer a competency only when its meaning and evidence genuinely apply to the destination profession. Record the source profession, original evidence, limits and any additional validation required.
 
-## 11. Synchronization and versioning
+## 11. Synchronization, provenance and historical migration
 
-No automatic synchronization is assumed between chats, GitHub, Library or plugins. Every saved update should identify the target branch or source, date and relevant file. Preserve historical entries and use version control for changes. Do not overwrite profession-specific sources from the shared system.
+No automatic synchronization is assumed between chats, GitHub, Library or plugins. Every saved update identifies exact target/source system, path, ref, version, date and fingerprint where available. Compare mirrors before claiming synchronization; preserve destination-only content.
+
+Historical imports must follow `core/knowledge-and-evidence-governance.md`: freeze source snapshots; inventory every record; preserve original IDs, event dates, authorship, participant, exact path/ref/fingerprint and artifact lineage; classify originals, supporting evidence, summaries, reconstructions, superseded items, duplicates and conflicts; map Learning State and Evidence Level independently; import only after explicit batch review; verify counts, IDs, links and source integrity. Do not rewrite source originals, silently deduplicate, or retroactively promote evidence. A missing historical record in the shared system is not evidence that the learning never occurred.
