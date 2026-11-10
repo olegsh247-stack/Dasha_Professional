@@ -253,16 +253,20 @@ The plugin core skill is a portable runtime mirror at `skills/dasha-core/SKILL.m
 
 | Field | Verified value |
 |---|---|
-| Library item | `LEARNING-SYSTEM.md` |
-| Latest identified Library revision | 2026-11-05 |
-| Authority role | Listed as current operating rules in the Dasha Archive Index |
-| Stated source policy | Its text says GitHub is the source of truth for verified documentation and Library is a planned mirror |
-| Matching GitHub source | **Not confirmed**; the expected GitHub path was not located during this audit |
-| Fingerprint/version | No Git blob SHA or explicit document version established |
-| Status | **Authority binding unresolved** |
-| Required action | Owning Dasha project must designate the exact canonical repository/path/ref/version/fingerprint or explicitly designate the Library item as canonical until a GitHub source exists |
+| Owner repository | `olegsh247-stack/Dasha` |
+| Canonical path | `docs/learning/LEARNING-SYSTEM.md` |
+| Canonical ref | `main` |
+| Git blob SHA | `759a365bba8b5081dabaf638bf7fd4afba61581e` |
+| Version | No explicit semantic document version is declared in the file |
+| Authority designation | The document states that GitHub is the source of truth for verified documentation and Library is a planned mirror. The Dasha Archive Index identifies `LEARNING-SYSTEM.md` as the current operating rules. |
+| Lifecycle status | Identified as current operating rules by the Archive Index; no separate formal lifecycle label or release tag was found |
+| Archive branch comparison | `docs/restore-module-iii-archive-2026-11-06-current` contains the exact same Git blob as `main`; branch age/ahead count does not create a separate authority |
+| Library mirror | `LEARNING-SYSTEM.md`, latest identified revision 2026-11-05 |
+| Mirror comparison | Text content matches GitHub `main` exactly apart from the terminal newline; the earlier 2026-11-04 Library copy is not the latest identified revision |
+| Binding status | **Canonical GitHub source path and fingerprint identified; explicit version/formal lifecycle metadata remain undeclared** |
+| Required action | No source-location action remains. If the owning Dasha project requires a formal semantic version or lifecycle label, its owner must add that metadata in the owning repository. Do not modify the separate Dasha repository or Library from this project. |
 
-Do not treat the 2026-11-05 date alone as proof of canonical authority. Use only non-conflicting instructions while the exact source binding remains unresolved.
+The source binding is sufficient to identify the current GitHub content. Do not infer a semantic version or a formal release approval that the source does not declare. The Library copy is a text-equivalent mirror with only a terminal-newline difference; do not describe it as a byte-for-byte match.
 
 ### A.3 Central Learning Log and Competency Register
 
