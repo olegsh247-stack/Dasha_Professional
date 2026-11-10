@@ -4,14 +4,14 @@
   "repository": "olegsh247-stack/Dasha_Professional",
   "current_source": {
     "branch": "main",
-    "approved_baseline_commit": "27d219f6e798c62c05bd1bc098bb3bf32d40748b",
-    "note": "Approved v1.1.0 content baseline: PR #11 merge commit 27d219f6e798c62c05bd1bc098bb3bf32d40748b. The release adopts knowledge and evidence governance; this metadata alignment records the exact current component fingerprints. No historical record migration is included or authorized."
+    "approved_baseline_commit": "01e778def4e5e9ac005b8174e6b705dbb922934e",
+    "note": "Approved v1.1.1 content baseline: PR #14 merge commit 01e778def4e5e9ac005b8174e6b705dbb922934e. This patch corrects the audited source inventory for historical Learning Log and Competency Register snapshots. The archive-branch snapshots remain candidates pending explicit owner approval; no historical records were imported or migrated."
   },
   "release": {
-    "version": "1.1.0",
+    "version": "1.1.1",
     "status": "approved",
     "approved_date": "2026-11-10",
-    "previous_version": "1.0.2"
+    "previous_version": "1.1.0"
   },
   "components": {
     "core": {
@@ -45,10 +45,10 @@
       "blob_sha": "4d980fa33ddc77b9612359a0b75c3147c3778dde"
     },
     "knowledge_evidence_governance": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "status": "approved",
       "entrypoint": "core/knowledge-and-evidence-governance.md",
-      "blob_sha": "f41d13a8fed3f36c13b2d104a717c44abc902aa7"
+      "blob_sha": "be2ff62c018765dabc3d2150f17aa476dab8725e"
     }
   },
   "policy": {
