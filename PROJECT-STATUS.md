@@ -2,7 +2,7 @@
 
 **Repository:** `olegsh247-stack/Dasha_Professional`  
 **Current approved source:** `main`  
-**Current release:** v1.0.1  
+**Current release:** v1.0.2  
 **Approved:** 2026-11-10
 
 ## Lifecycle definitions
@@ -19,8 +19,8 @@
 | Component | Version | Status | Notes |
 |---|---:|---|---|
 | Core | 1.0.0 | Approved | First edition approved 2026-11-10 and merged to `main` in PR #2. |
-| Professional Learning System | 1.0.1 | Approved | v1.0.0 baseline plus operational consistency refinements merged through PR #3 on 2026-11-10. |
-| Universal Learning Skill | 1.0.0 | Approved | No profession-specific curriculum is embedded in the Skill. |
+| Professional Learning System | 1.0.2 | Approved | Includes readiness and authority-verification consistency refinements merged through PRs #8 and #9 on 2026-11-10. |
+| Universal Learning Skill | 1.0.1 | Approved | Requires explicit verification of a profession module's source, lifecycle status and approval before use; no profession-specific curriculum is embedded in the Skill. |
 | Startup and progress protocol | 1.0.1 | Approved | Current-source guidance, compact two-level loading and complete unsaved-record fallback. |
 | Risk Management profession module | — | Not established on `main` | A historical source pointer is listed below. Its professional content and approval status are not assessed by this repository audit; verify them in the profession's own authoritative workflow before use. |
 | Other profession modules | — | Not started | No other approved modules are indexed on `main`. |
