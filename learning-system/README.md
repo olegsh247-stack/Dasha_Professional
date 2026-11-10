@@ -1,6 +1,6 @@
 # Professional Learning System
 
-**Status:** first implementation, pending audit.  
+**Status:** first implementation; structural consistency review completed 2026-11-10, approval pending.  
 **Working branch:** `feat/universal-learning-system`.
 
 ## Purpose
@@ -26,12 +26,12 @@ Use [START-PROMPT.md](START-PROMPT.md). The chat must load the current Core, thi
 - [profession-template.md](profession-template.md) — standard for creating new profession modules.
 - [progress-protocol.md](progress-protocol.md) — continuity, evidence and recordkeeping rules.
 
-## Initial shared records
+## Shared records
 
-- [Learning Log](../records/learning-log.md) — chronological learning events.
-- [Competency Register](../records/competency-register.md) — current competency status and evidence.
+- [Learning Log](../records/learning-log.md) — chronological learning events. It contains the initial program-design decision; detailed historical lesson records have not been imported.
+- [Competency Register](../records/competency-register.md) — current competency states and evidence pointers. It is initialized but has no imported or assessed competency entries.
 
-These records are initialized as empty structures. No historical progress is inferred or fabricated. Existing standalone projects remain authoritative for their own training history.
+The shared records do not replace profession-specific histories or the authoritative records of standalone projects.
 
 ## Non-automatic synchronization
 
