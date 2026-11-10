@@ -224,13 +224,9 @@ No automatic synchronization is assumed among chats, GitHub, Library or plugins.
 
 Changes to this governance standard require versioning, review and an explicit approval record. Until approved, this file is a proposal and must not be represented as an active policy.
 
-
 ---
 
----
-
-# Appendix A — Source Authority Inventory
-
+## Appendix A — Source Authority Inventory
 
 This register records exact source identity and known discrepancies. It does not approve another project's content or override its owner.
 
