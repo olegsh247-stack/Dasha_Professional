@@ -16,7 +16,7 @@ Use this prompt in a new learning chat. Replace only the profession name. This p
 - `PROJECT-STATUS.md`;
 - `manifest.json`;
 - `core/README.md`;
-- `core/source-authority-register.md`;
+- Appendix A of `core/knowledge-and-evidence-governance.md`;
 - `core/knowledge-and-evidence-governance.md`;
 - `learning-system/README.md`;
 - `learning-system/SKILL.md`;
