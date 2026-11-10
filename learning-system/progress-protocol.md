@@ -24,7 +24,7 @@ If two authoritative sources conflict, surface the conflict and do not silently 
 Load the compact orientation set first:
 
 1. current `PROJECT-STATUS.md` and `manifest.json`;
-2. `core/source-authority-register.md`;
+2. Appendix A of `core/knowledge-and-evidence-governance.md`;
 3. the exact approved revisions of the Dasha charter and Cross-Project Learning System, using the register and fingerprint; compare Library/plugin mirrors and report any mismatch;
 4. `core/knowledge-and-evidence-governance.md`;
 5. `core/README.md` and only the Core documents relevant to the current lesson;
