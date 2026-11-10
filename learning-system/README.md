@@ -1,6 +1,6 @@
 # Professional Learning System
 
-**Status:** first implementation; structural consistency review completed 2026-11-10, approval pending.  
+**Status:** Approved — first edition approved 2026-11-10.  \
 **Working branch:** feat/universal-learning-system.
 
 ## Purpose
@@ -26,7 +26,7 @@ These documents are not automatically synchronized with this repository. Load th
 
 ## Start a learning chat
 
-Use [START-PROMPT.md](START-PROMPT.md). The chat must load the current Core, the two governing Library documents, this system, the selected profession module and relevant records before teaching. Until this branch is approved and merged, explicitly load feat/universal-learning-system.
+Use [START-PROMPT.md](START-PROMPT.md). The chat must load the current Core, the two governing Library documents, this system, the selected profession module and relevant records before teaching. Until this branch is merged into main, explicitly load feat/universal-learning-system.
 
 ## Files
 
