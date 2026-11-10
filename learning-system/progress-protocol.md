@@ -4,9 +4,11 @@
 
 Preserve learning continuity across separate chats and professions without repeatedly asking the user for information already recorded. This protocol defines what to read, where facts live, how progress is evidenced and how updates are saved.
 
-## 2. Source-of-truth hierarchy
+## 2. Governing rules and source-of-truth hierarchy
 
-Use the most specific authoritative source:
+The Dasha charter and Cross-Project Learning System in Library, together with the approved Core in this repository, govern general identity, learning conduct, knowledge transfer and recordkeeping. They are governing instructions, not substitutes for project facts or professional evidence.
+
+For factual claims, project decisions and learning evidence, use the most specific authoritative source:
 
 1. **Profession/project source of truth** — approved curriculum, professional decisions, detailed cases and project-specific evidence.
 2. **Profession-specific learning artifacts** — lesson records, exercises, assessments and casebooks.
@@ -15,16 +17,17 @@ Use the most specific authoritative source:
 5. **Current chat** — provisional context until a durable record is saved.
 6. **Assistant recollection or inference** — never stronger than a recorded source; label as unverified.
 
-If two authoritative sources conflict, surface the conflict and do not silently overwrite either one.
+If two authoritative sources conflict, surface the conflict and do not silently overwrite either one. A general governance document does not override a more specific approved project decision or professional source on factual matters; conversely, project-specific facts do not silently rewrite Dasha's general operating rules.
 
 ## 3. What to load at session start
 
 Read in this order:
-1. selected profession module and its current curriculum;
-2. latest relevant profession-specific learning record;
-3. shared Competency Register;
-4. latest relevant entries in shared Learning Log;
-5. unresolved tasks and prior chat context, if available.
+1. governing Library documents and relevant Core documents;
+2. selected profession module and its current curriculum;
+3. latest relevant profession-specific learning record;
+4. shared Competency Register;
+5. latest relevant entries in shared Learning Log;
+6. unresolved tasks and prior chat context, if available.
 
 Load only records relevant to the selected profession and its dependencies; do not dump the user's entire learning history into every chat.
 
