@@ -17,6 +17,15 @@
 - Integrations are planned; no integrations registry is currently implemented.
 - A profession module is not considered available or approved merely because it exists on an old or separate branch. Check [PROJECT-STATUS.md](PROJECT-STATUS.md) and [manifest.json](manifest.json).
 
+## Quality checks
+
+Pushes to branches and pull requests run automated checks:
+
+- **Markdown lint:** `markdownlint-cli2` checks repository Markdown against the shared configuration in `.markdownlint-cli2.jsonc`.
+- **Link validation:** Lychee checks Markdown links, including relative repository paths and reachable external URLs.
+
+Both checks must pass before a change is considered ready for approval. A transient external-service failure should be investigated and rerun; do not silently disable link validation to make a check green.
+
 ## Working rules
 
 - Use the current approved version on `main`, unless a project instruction explicitly names another ref.
