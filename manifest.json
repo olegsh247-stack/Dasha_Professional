@@ -5,13 +5,13 @@
   "current_source": {
     "branch": "main",
     "approved_baseline_commit": "2ee9fb8cdb80c8b797356e44d36974c340271ea5",
-    "note": "Approved v1.0.1 release baseline finalized in PR #4 on 2026-11-10. PR #5 added repository quality automation afterward without changing approved Core or Learning System component contents."
+    "note": "The approved v1.0.1 predecessor baseline was finalized in PR #4 on 2026-11-10. The v1.0.2 consistency update is proposed in PR #9; component fingerprints below identify the exact files in that candidate."
   },
   "release": {
-    "version": "1.0.1",
-    "status": "approved",
-    "approved_date": "2026-11-10",
-    "previous_version": "1.0.0"
+    "version": "1.0.2",
+    "status": "proposed",
+    "proposed_date": "2026-11-10",
+    "previous_version": "1.0.1"
   },
   "components": {
     "core": {
@@ -21,28 +21,28 @@
       "blob_sha": "e0f86ab117660840324eaa7e854c4104f63d15b8"
     },
     "professional_learning_system": {
-      "version": "1.0.1",
+      "version": "1.0.2",
       "status": "approved",
       "entrypoint": "learning-system/README.md",
-      "blob_sha": "5aadacc931329ad079fc92d063a4d27b23d71dea"
+      "blob_sha": "dcd083eeb7850a6bdcea98be4eb70ca3b6ce4b88d"
     },
     "universal_skill": {
-      "version": "1.0.0",
+      "version": "1.0.1",
       "status": "approved",
       "entrypoint": "learning-system/SKILL.md",
-      "blob_sha": "e8f71dcc12e165fc2f6c22741489aa0e01534dc7"
+      "blob_sha": "0f9140b6c3140167c9820486eee8b96c4d8538ef"
     },
     "startup_prompt": {
       "version": "1.0.1",
       "status": "approved",
       "entrypoint": "learning-system/START-PROMPT.md",
-      "blob_sha": "e94d4358de27c94a5bda525855b60f5e6271fdcb"
+      "blob_sha": "849661c2f53b5ce7d9534bf0b9e2080d395ff63f"
     },
     "progress_protocol": {
       "version": "1.0.1",
       "status": "approved",
       "entrypoint": "learning-system/progress-protocol.md",
-      "blob_sha": "b6c1fc030666c18cc03b52251710e8b1f582cb13"
+      "blob_sha": "0f06eef4d663a938ee2a7bfea553581051891460"
     }
   },
   "policy": {

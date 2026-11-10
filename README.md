@@ -13,7 +13,7 @@
 
 ## Project boundaries
 
-- Professional modules live in `professions/` and define profession-specific knowledge and curricula.
+- Approved profession modules are stored in `professions/` when added; each module defines profession-specific knowledge and curricula. The directory may be absent while no approved modules are maintained on `main`.
 - Independent projects such as Psychology and Crypto remain their own sources of truth; this repository links to them without copying their content.
 - The [integrations registry](integrations/README.md) is a navigation and governance index, not a live synchronization layer.
 - A profession module is not considered available or approved merely because it exists on an old or separate branch. Check [PROJECT-STATUS.md](PROJECT-STATUS.md) and [manifest.json](manifest.json).
