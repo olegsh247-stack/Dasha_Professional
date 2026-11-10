@@ -1,6 +1,6 @@
 ---
 name: professional-learning-system
-description: Universal system for launching and conducting deep, structured training in any profession. Loads Dasha Core, a profession-specific module and shared progress records; avoids repeated intake; teaches, assesses and records evidence consistently across separate chats.
+description: Universal system for launching and conducting deep, structured training in any profession. Loads Dasha's canonical charter, cross-project learning rules, Core, a profession-specific module and shared progress records; avoids repeated intake; teaches, assesses and records evidence consistently across separate chats.
 ---
 
 # Skill: Professional Learning System
@@ -15,18 +15,20 @@ This Skill governs **how learning is organized**. It does not replace the profes
 
 At the beginning of a learning chat, retrieve the current versions of:
 
-1. `core/README.md`;
-2. relevant Core documents: identity, principles, methodology, quality, error management, communication, knowledge management and governance;
-3. `learning-system/README.md`;
-4. this Skill, `learning-system/SKILL.md`;
-5. `learning-system/progress-protocol.md`;
-6. the selected profession's `README.md`, `curriculum.md` and profession-specific Skill, if present;
-7. shared records: `records/learning-log.md` and `records/competency-register.md`;
-8. profession-specific records and prior learning artifacts, if they exist.
+1. Library document dasha-personality-development-and-competencies.md — canonical identity and long-term development charter.
+2. Latest Library revision of LEARNING-SYSTEM.md — cross-project learning, transfer and knowledge-governance rules. If multiple copies exist, prefer the latest verified revision; the 2026-11-05 revision was the latest identified on 2026-11-10 and supersedes the 2026-11-04 copy.
+3. core/README.md;
+4. relevant Core documents: identity, principles, methodology, quality, error management, communication, knowledge management and governance;
+5. learning-system/README.md;
+6. this Skill, learning-system/SKILL.md;
+7. learning-system/progress-protocol.md;
+8. the selected profession's README.md, curriculum.md and profession-specific Skill, if present;
+9. shared records: records/learning-log.md and records/competency-register.md;
+10. profession-specific records and prior learning artifacts, if they exist.
 
 Use the repository branch or version explicitly designated as current by the user or project instructions. Do not silently use an older branch, stale local copy or a guessed path.
 
-If a required source is inaccessible, say exactly which source could not be read. Never claim to have loaded, checked or saved something that you did not actually access.
+If a required source is inaccessible, say exactly which source could not be read. Never claim to have loaded, checked or saved something that you did not actually access. If Library access is unavailable, report that limitation and continue only with the accessible repository sources; do not pretend the Library documents were loaded.
 
 ## 3. No-repeat intake principle
 
@@ -48,7 +50,7 @@ If no module exists:
 3. identify genuine gaps that cannot be responsibly resolved from reliable sources;
 4. ask for approval before changing the repository or treating a proposed curriculum as approved;
 5. do not pretend the profession is already fully programmed.
-   
+
 For a complex or ambiguous role, make a grounded provisional scope and state it. Ask one concise clarification only if different interpretations would materially change the curriculum.
 
 ## 4. Learning architecture
@@ -59,6 +61,8 @@ Keep four layers distinct:
 - **Universal learning system:** how a learning path is launched, delivered, assessed and recorded.
 - **Profession module:** what the profession requires and in what sequence it is taught.
 - **Records:** what has actually been studied, practiced, demonstrated and verified.
+
+The two Library documents listed above govern Dasha's general identity and cross-project learning/knowledge transfer. They complement this repository; they do not replace profession-specific project sources or authorize copying their contents wholesale.
 
 Never copy a full profession curriculum into this Skill. Never let a generic learning rule override a profession-specific safety, legal, regulatory or technical requirement.
 
