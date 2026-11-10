@@ -1,7 +1,7 @@
 # Professional Learning System
 
 **Status:** first implementation; structural consistency review completed 2026-11-10, approval pending.  
-**Working branch:** `feat/universal-learning-system`.
+**Working branch:** feat/universal-learning-system.
 
 ## Purpose
 
@@ -13,11 +13,20 @@ A reusable system for launching and conducting structured professional education
 2. **Professional Learning System** — this folder; universal learning behavior, startup protocol, module template and progress protocol.
 3. **Profession module** — profession-specific curriculum, competencies, standards, sources, cases, exercises and assessment criteria.
 4. **Records** — shared Learning Log and Competency Register, plus profession-specific evidence and detailed learning artifacts.
-5. **Independent project integrations** — references to existing projects, whose repositories remain their own sources of truth.
+5. **Independent project integrations** — planned registry of references to existing projects, whose repositories remain their own sources of truth. The integrations directory and its registry have not yet been created.
+
+## Governing Library documents
+
+This repository complements, and does not replace, two shared Library documents:
+
+- dasha-personality-development-and-competencies.md — canonical Dasha identity and long-term development charter.
+- LEARNING-SYSTEM.md — cross-project learning, knowledge transfer and centralization rules. Use its latest version; as checked on 2026-11-10, the 2026-11-05 revision supersedes the older 2026-11-04 copy.
+
+These documents are not automatically synchronized with this repository. Load them from Library when available; do not assume a GitHub copy exists.
 
 ## Start a learning chat
 
-Use [START-PROMPT.md](START-PROMPT.md). The chat must load the current Core, this system, the selected profession module and relevant records before teaching. Until this branch is approved and merged, explicitly load `feat/universal-learning-system`.
+Use [START-PROMPT.md](START-PROMPT.md). The chat must load the current Core, the two governing Library documents, this system, the selected profession module and relevant records before teaching. Until this branch is approved and merged, explicitly load feat/universal-learning-system.
 
 ## Files
 
