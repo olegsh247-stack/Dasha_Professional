@@ -22,13 +22,29 @@
 | Professional Learning System | 1.0.1 | Approved | v1.0.0 baseline plus operational consistency refinements merged through PR #3 on 2026-11-10. |
 | Universal Learning Skill | 1.0.0 | Approved | No profession-specific curriculum is embedded in the Skill. |
 | Startup and progress protocol | 1.0.1 | Approved | Current-source guidance, compact two-level loading and complete unsaved-record fallback. |
-| Risk Management profession module | — | Not established on `main` | Historical files were observed on older feature branches and deliberately excluded from the approved Core and Learning System baseline. Their professional content and approval status are not assessed here. Verify in the profession's own workflow before use. |
-| Other profession modules | — | Not started | No approved modules are indexed on `main`. |
+| Risk Management profession module | — | Not established on `main` | A historical source pointer is listed below. Its professional content and approval status are not assessed by this repository audit; verify them in the profession's own authoritative workflow before use. |
+| Other profession modules | — | Not started | No other approved modules are indexed on `main`. |
 | Integrations registry | 1.0 | Active | Reference-only index at [integrations/README.md](integrations/README.md). No live technical connections or automatic synchronization are configured. |
 | Shared Learning Log | — | Active | Baseline program decision recorded; detailed historical lesson records have not been imported. |
 | Competency Register | — | Active | Initialized; no imported or assessed competency entries yet. |
 | Repository quality checks | — | Active | Markdown lint and link validation run on pushes, pull requests and manual dispatch. |
 | `main` branch protection | — | Not enabled by design | No mandatory branch protection/ruleset is configured. This is an intentional usability decision: avoid restrictive controls that previously disrupted the owner's workflow. CI continues to run on pushes and pull requests; PRs are the preferred change path, not a technical requirement. |
+
+## Profession module discovery pointers
+
+These are explicit lookup locations, not approvals:
+
+| Profession | Source | Classification | Required handling |
+|---|---|---|---|
+| Risk Management | Branch `feat/risk-management-learning-kit` in this repository | Historical source; not approved by this repository's main baseline | Verify the module's own status, owner approval, current curriculum and progress records in its designated workflow before teaching from it. Do not infer approval from the branch name. |
+
+Discovery rules:
+
+1. Check `main` first for an approved profession module.
+2. If absent, consult only the exact alternative-source pointers listed in this section and any explicit source named by the user or the profession's own project status.
+3. Treat a historical branch or external project as a location to investigate, not as evidence of approval or currency.
+4. If the pointer is stale, inaccessible or ambiguous, report that fact. Do not search arbitrary branches and do not guess.
+5. If no authoritative module can be verified, prepare a proposed module from `learning-system/profession-template.md` and request user approval before treating it as active.
 
 ## Source-of-truth rules
 
