@@ -20,8 +20,8 @@
 |---|---:|---|---|
 | Core | 1.1.0 | Approved | Includes the canonical-source and evidence-governance standard adopted in PR #11. |
 | Professional Learning System | 1.1.0 | Approved | Includes exact source-authority checks, independent Learning State and E0–E5 dimensions, provenance and migration controls. |
-| Universal Learning Skill | 1.0.1 | Approved | Current approved baseline; proposed exact-ref verification and dual-axis evidence rules are pending review. |
-| Startup and progress protocol | 1.0.1 | Approved | Current approved baseline; proposed canonical-source, provenance and migration rules are pending review. |
+| Universal Learning Skill | 1.1.0 | Approved | Aligned with the approved v1.1.0 manifest; exact-ref verification and dual-axis evidence rules are included. |
+| Startup and progress protocol | 1.1.0 | Approved | Aligned with the approved v1.1.0 manifest; canonical-source, provenance and migration rules are included. |
 | Risk Management profession module | — | Not established on `main` | A historical source pointer is listed below. Its professional content and approval status are not assessed by this repository audit; verify them in the profession's own authoritative workflow before use. |
 | Other profession modules | — | Not started | No other approved modules are indexed on `main`. |
 | Integrations registry | 1.0 | Active | Reference-only index at [integrations/README.md](integrations/README.md). No live technical connections or automatic synchronization are configured. |
