@@ -1,10 +1,12 @@
-# Shared Learning Records
+# Project-Local Learning Records
 
-These files provide a shared cross-profession index. They do not replace detailed profession-specific records or the authoritative history of standalone projects.
+These records belong exclusively to `Dasha_Professional`. They cover learning events and competencies arising from profession modules maintained in this repository.
 
-- [Learning Log](learning-log.md) — chronological record of significant learning milestones.
-- [Competency Register](competency-register.md) — current competency states and evidence pointers.
+They are **not** a cross-project index. Do not copy, summarize, reconstruct, import or synchronize another project's lesson history, Learning Log, Competency Register, assessments or evidence here. Independent projects retain their own records and sources of truth.
 
-**Initial state:** the Learning Log contains the baseline decision to establish the Professional Learning System and select the first profession. Detailed historical lesson records have not been imported. The Competency Register is initialized but has no imported or assessed competency entries. This is deliberate: no progress from separate projects is copied or inferred without a verified source and an explicit mapping.
+- [Learning Log](learning-log.md) — chronological record of significant learning milestones within this repository.
+- [Competency Register](competency-register.md) — current competency states and evidence pointers for learning programs within this repository.
 
-Use `core/knowledge-and-evidence-governance.md` and `learning-system/progress-protocol.md` for source authority, separate Learning State / Evidence Level, provenance and migration rules. Verify writes by reading the updated file back.
+**Initial state:** the Learning Log contains the local baseline decision to establish the Professional Learning System and select the first profession. The Competency Register is initialized but has no assessed competency entries. This says nothing about learning or competence in independent projects.
+
+Use [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md) and [Progress Protocol](../learning-system/progress-protocol.md) for local recordkeeping, separate Learning State / Evidence Level and provenance. Verify writes by reading the updated file back.

@@ -19,33 +19,37 @@
 | Component | Version | Status | Notes |
 |---|---:|---|---|
 | Core | 1.1.0 | Approved | Includes the canonical-source and evidence-governance standard adopted in PR #11. |
-| Professional Learning System | 1.1.0 | Approved | Includes exact source-authority checks, independent Learning State and E0–E5 dimensions, provenance and migration controls. |
-| Universal Learning Skill | 1.1.0 | Approved | Aligned with the approved v1.1.0 manifest; exact-ref verification and dual-axis evidence rules are included. |
-| Startup and progress protocol | 1.1.0 | Approved | Aligned with the approved v1.1.0 manifest; canonical-source, provenance and migration rules are included. |
+| Professional Learning System | 1.1.0 | Approved | Current approved baseline; proposed project-local record-boundary correction is under review in PR #16. |
+| Universal Learning Skill | 1.1.0 | Approved | Current approved baseline; proposed project-local record-boundary correction is under review in PR #16. |
+| Startup and progress protocol | 1.1.0 | Approved | Current approved baseline; proposed project-local record-boundary correction is under review in PR #16. |
 | Risk Management profession module | — | Not established on `main` | A historical source pointer is listed below. Its professional content and approval status are not assessed by this repository audit; verify them in the profession's own authoritative workflow before use. |
 | Other profession modules | — | Not started | No other approved modules are indexed on `main`. |
 | Integrations registry | 1.0 | Active | Reference-only index at [integrations/README.md](integrations/README.md). No live technical connections or automatic synchronization are configured. |
-| Shared Learning Log | — | Active | Baseline program decision recorded; detailed historical lesson records have not been imported. |
-| Competency Register | — | Active | Initialized; no imported or assessed competency entries yet. |
+| Learning Log | — | Active | Current v1.1.0 baseline; proposed strict project-local boundary is under review in PR #16. |
+| Competency Register | — | Active | Current v1.1.0 baseline; proposed strict project-local boundary is under review in PR #16. |
 | Repository quality checks | — | Active | Markdown lint and link validation run on pushes, pull requests and manual dispatch. |
 | `main` branch protection | — | Not enabled by design | No mandatory branch protection/ruleset is configured. This is an intentional usability decision: avoid restrictive controls that previously disrupted the owner's workflow. CI continues to run on pushes and pull requests; PRs are the preferred change path, not a technical requirement. |
 
 ## v1.1.0 release record
 
-Approved on 2026-11-10. The release incorporates the cross-cutting knowledge and evidence governance architecture merged in PR #11 (commit `27d219f6e798c62c05bd1bc098bb3bf32d40748b`).
+Approved on 2026-11-10. The release incorporates the knowledge and evidence governance architecture merged in PR #11 (commit `27d219f6e798c62c05bd1bc098bb3bf32d40748b`).
 
 Included:
-- canonical-source authority rules and Appendix A source inventory;
+- canonical-source authority rules and source inventory;
 - independent Learning State and E0–E5 Evidence Level dimensions;
 - evidence attribution and provenance requirements;
-- staged historical migration controls, without authorizing or performing a migration;
-- aligned Core, Professional Learning System, Skill, startup prompt, progress protocol and shared record templates.
+- historical migration controls, without authorizing or performing a migration;
+- aligned Core, Professional Learning System, Skill, startup prompt, progress protocol and record templates.
 
-No historical records were imported, no competency levels were changed, and no edits were made to the separate Dasha repository or Library. Unresolved external source bindings remain unresolved and must not be treated as approved migration baselines.
+No historical records were imported, no competency levels were changed, and no edits were made to the separate Dasha repository or Library.
+
+## Pending architecture correction
+
+PR #16 proposes to remove cross-project learning-record concepts and define `records/` as local exclusively to this repository. The proposed changes are not part of the approved v1.1.0 release and must not be treated as active until reviewed and merged.
 
 ## Profession module discovery pointers
 
-These are explicit lookup locations, not approvals:
+These are navigation pointers only, not approvals or permission to access or copy learning records:
 
 | Profession | Source | Classification | Required handling |
 |---|---|---|---|
@@ -63,8 +67,8 @@ Discovery rules:
 
 1. Use `main` and the release metadata in `manifest.json` as the default current source.
 2. A branch is not an approved release merely because it contains files or was used in an earlier chat.
-3. A profession module's approval must be established in its own source and must not be inferred from this repository's general architecture approval.
-4. Independent projects remain authoritative for their own content.
+3. A profession module's approval must be established in its own source and must not be inferred from this repository's general architecture approval. Its project-specific learning history remains in that project.
+4. Independent projects remain authoritative for their own content, learning records and competency evidence.
 5. When the current source or version cannot be verified, stop short of claiming it is current; report the uncertainty.
 
 ## Change control

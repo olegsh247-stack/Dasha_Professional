@@ -1,33 +1,27 @@
 # Knowledge & Evidence Governance
 
-**Status:** Approved — adopted in PR #11, merged to `main` on 2026-11-10.
-**Version:** 1.0.0
-**Purpose:** Define one operational contract for canonical sources, learning states, evidence levels and safe migration of historical learning records across Dasha projects.
+**Status:** Approved architecture baseline; corrective boundary revision proposed in PR.
+**Purpose:** Define source authority, learning states, evidence levels and recordkeeping boundaries for this repository.
 
-## 1. Scope and governing principle
+## 1. Scope and non-negotiable project boundary
 
-This document governs cross-project knowledge and evidence handling. It does not replace a project's own source-of-truth rules, professional curriculum, legal obligations or safety controls.
+This document governs the Core and the Professional Learning System maintained in `olegsh247-stack/Dasha_Professional`.
 
-Every record must answer four separate questions:
+**All records in this repository are local to this repository.** The Learning Log and Competency Register may cover professions whose modules are maintained here, but they are not cross-project repositories and must never contain another project's learning events, lesson history, competency evidence or assessments.
 
-1. **Authority:** which source and exact revision is authoritative?
-2. **Learning state:** where is the learning activity in its lifecycle?
-3. **Evidence level:** how strongly is a specific competency claim supported?
-4. **Provenance:** where did the record and its evidence originate, and how were they transformed?
+Independent projects retain their own curricula, records, evidence, decisions and source-of-truth rules. Links may be maintained for navigation and boundary awareness only. A link does not authorize reading records into this repository, copying them, summarizing their history here, mapping their competencies here or migrating them here.
 
-Never infer one answer from another. A current record is not automatically authoritative; a completed lesson is not automatically a demonstrated competency; a high evidence level does not imply a licence or professional qualification.
+No cross-project learning-record migration or synchronization is supported by this repository's policy. If the owner later wants a different architecture, it requires a separately discussed and approved design; this document is not authorization for it.
 
 ## 2. Canonical-source governance
 
 ### 2.1 One authority per document
 
-Each cross-project governing document must have one canonical source identity:
-
-- repository or system;
-- exact file path;
+For every governing document used operationally, identify:
+- repository or system and exact file path;
 - designated branch, tag or immutable commit;
 - document version and lifecycle status;
-- content fingerprint (Git blob SHA where available);
+- content fingerprint where available;
 - owner/approver and approval evidence;
 - last verified date.
 
@@ -36,25 +30,23 @@ A filename, newest timestamp, Library location, branch name or plugin availabili
 ### 2.2 Authority roles
 
 - **Canonical repository revision:** authoritative editable source when its exact ref, version and approval status are explicitly designated.
-- **Library copy:** distribution mirror or working copy; it is not a second authority. It may be used as canonical only when this governance document explicitly designates that Library item and version.
-- **Plugin/portable Skill copy:** execution package derived from the canonical source. It must identify its source revision and may not silently override it.
-- **Project-specific records:** authoritative for that project's facts, decisions, detailed evidence and artefacts.
-- **Shared Learning Log:** cross-project chronology and provenance index; not a substitute for original evidence.
-- **Shared Competency Register:** current cross-project snapshot; not a narrative history or source of detailed evidence.
+- **Library copy:** distribution mirror or working copy; it is not a second authority unless explicitly designated.
+- **Plugin/portable Skill copy:** execution package derived from a canonical source; it must identify its source revision and may not silently override it.
+- **Project-local records:** authoritative only for the project in which they were created and maintained.
+- **Navigation pointer:** a link or short description identifying an independent project. It carries no learning history, evidence, approval or synchronization authority.
 
 ### 2.3 Conflict handling
 
-If copies differ, do not merge them by choosing the newest or longest copy. Record each candidate's exact source, version, ref, fingerprint, status and unique content. Mark the canonical revision **Unresolved** until the owner/approver selects or reconciles it. During the conflict:
-
-- do not silently teach from conflicting governance instructions as though they were one approved version;
+If copies of the same governing document differ, do not merge them by choosing the newest or longest copy. Record each candidate's exact source, version, ref, fingerprint, status and unique content. Mark the canonical revision **Unresolved** until its owner selects or reconciles it. During the conflict:
+- do not teach from conflicting instructions as though they were one approved version;
 - do not overwrite either copy;
-- use only non-conflicting rules that are independently authoritative;
+- use only independently authoritative, non-conflicting rules;
 - pause only actions whose correctness depends on the unresolved rule;
-- create a reconciliation record and verify the selected copy by readback.
+- verify the selected copy by reading it back.
 
-### 2.4 Audited source bindings
+### 2.4 External identity reference
 
-The exact cross-project source inventory, fingerprints, comparison results and owner actions are maintained in **Appendix A — Source Authority Inventory** of this same document. The inventory is a dated audit snapshot, not a live synchronization mechanism. Unresolved sources must not be treated as approved migration baselines.
+The Dasha identity/development charter is maintained by its owning project. This repository may retain a navigation pointer to that charter for identity context, but does not own, mirror or govern the charter's project-specific learning records. The pointer does not authorize importing another project's Learning Log, Competency Register, curriculum history or evidence.
 
 ## 3. Two independent dimensions: Learning State and Evidence Level
 
@@ -67,12 +59,12 @@ Use exactly one current state for a given participant, competency or learning ob
 | **Not started** | No learning activity is recorded for this objective. This is not a judgment about prior knowledge. |
 | **Studied** | Relevant material was reviewed. Practical performance is not established. |
 | **In progress** | A structured learning activity is currently underway. |
-| **Practiced** | The participant has attempted exercises, simulations or real tasks. The quality and independence of performance remain separately assessed. |
-| **Demonstrated achievement** | A specified outcome was checked against explicit criteria. This state must point to evidence and its limits. |
+| **Practiced** | The participant attempted exercises, simulations or real tasks. Quality and independence remain separately assessed. |
+| **Demonstrated achievement** | A specified outcome was checked against explicit criteria and points to evidence. |
 | **Open question** | A material gap, contradiction or uncertainty remains unresolved. |
 | **Future direction** | The topic is intentionally outside the active learning plan. |
 
-These states are not a mandatory linear ladder. A topic can return to In progress after a new standard, correction or failure. Open question may coexist as a separate issue record; do not erase the underlying activity state to hide uncertainty.
+These states are not a mandatory linear ladder. A topic can return to In progress after a new standard, correction or failure. Open question may be tracked separately; do not erase the underlying activity state to hide uncertainty.
 
 ### 3.2 Evidence Level — strength of a competency claim
 
@@ -87,25 +79,24 @@ Use the E0–E5 scale only for a specific competency claim, participant and scop
 | **E4 — Independently applied** | Completed a bounded task with limited prompting. | Reproducible artifact/result and validation. |
 | **E5 — Repeatably verified** | Repeated successful application in different or non-trivial cases. | At least two distinct validations, including failure/boundary cases where relevant. |
 
-E0–E5 describes evidence strength, not a learning-state label, human credential, licence, clinical competence or professional certification. E5 does not imply authorization to perform regulated work.
+E0–E5 describes evidence strength, not a human credential, licence, clinical competence or professional certification. E5 does not imply authorization to perform regulated work.
 
-### 3.3 How the dimensions relate
+### 3.3 Relationship between dimensions
 
 - Studied + E1 is common, but not mandatory.
 - Practiced may remain E0 or E1 if the attempt was not meaningfully assessed.
-- Demonstrated achievement requires an identified assessment and evidence; it does not automatically mean E3 or higher.
+- Demonstrated achievement requires identified assessment and evidence; it does not automatically mean E3 or higher.
 - A competency may retain E3 while its learning state is In progress.
 - E0 means not assessed; it does not mean incapable or no prior knowledge.
 - Never calculate or promote E-levels automatically from lesson count, ratings, confidence, attendance or learning state.
 
-Record both dimensions independently. If a legacy source contains only one, preserve the original value and mark the missing dimension **Not mapped** until reviewed.
+Record both dimensions independently. If a source contains only one, preserve the original value and mark the missing dimension **Not mapped** until reviewed.
 
 ## 4. Evidence and attribution rules
 
 Every competency claim must be scoped to:
-
 - competency ID/name and domain;
-- participant: Dasha, user, or another explicitly identified person;
+- participant: Dasha, user or another explicitly identified person;
 - task/context and date;
 - learning state;
 - evidence level (or Not assessed / Not mapped);
@@ -117,181 +108,45 @@ Every competency claim must be scoped to:
 
 Keep the user's learning evidence separate from Dasha's model/tool performance. Distinguish user feedback from independent review. A numerical satisfaction rating is qualitative feedback, not by itself competency evidence.
 
-Do not transfer an evidence level to a broader competency, another participant or another profession without an explicit mapping and additional validation.
+Do not transfer an evidence level to a broader competency, another participant, another profession or another project without a separately approved assessment process and new supporting evidence. This repository does not provide a cross-project transfer process.
 
-## 5. Historical migration protocol
+## 5. Project-local recordkeeping
 
-Historical migration is an evidence-preservation operation, not a content-cleanup exercise.
+### Learning Log — chronological local events
 
-### Phase 0 — Freeze and scope
-
-1. Name the source projects, repositories, branches, Library locations and date range in scope.
-2. Record the migration batch ID, operator, start date and immutable source snapshot (commit/ref, file version, blob SHA or equivalent).
-3. Make no source edits or deletions during inventory.
-4. Exclude sensitive or unnecessary personal data; retain only the minimum evidence needed.
-
-### Phase 1 — Inventory
-
-For every source artifact or record, capture:
-
-- migration batch ID;
-- original record/event ID, if any;
-- original event date and source-record date separately;
-- participant and project/module;
-- source system, repository, exact path, ref/version and fingerprint;
-- artifact type: user original, assistant output, dialogue, exercise, assessment, reconstruction, summary, correction or index;
-- current status in the source project;
-- links to related originals, superseded versions and duplicates;
-- integrity/readability check.
-
-Do not treat an index entry or summary as the original artifact.
-
-### Phase 2 — Classify and reconcile
-
-Classify each item as **Canonical original**, **Supporting evidence**, **Index/summary**, **Superseded**, **Duplicate**, **Reconstruction**, **Unverified** or **Conflict**.
-
-- Preserve unique source material and its provenance.
-- Keep superseded or reconstructed records as historical provenance; do not count them as independent evidence if they derive from the same event.
-- Deduplicate only after comparing content and lineage; record which copy is retained and why.
-- If GitHub and Library differ, preserve both snapshots and record the exact delta. Do not silently select one.
-- If event date, participant, authorship or assessment cannot be verified, mark it Unknown.
-
-### Phase 3 — Map without promotion
-
-1. Map legacy topics/competencies to target competency IDs with a written rationale.
-2. Preserve the original wording and status in the migration record.
-3. Assign a proposed Learning State and Evidence Level separately.
-4. Set evidence level to **Not mapped** or **E0 — Not assessed** when the source does not support a defensible assessment.
-5. Do not raise a level because the record is old, extensive, highly rated or repeated in summaries.
-6. Preserve simulation labels, reviewer identity and limits.
-7. Require review for every proposed E3–E5 mapping; E4/E5 additionally require validation of independence/repeatability criteria.
-
-### Phase 4 — Import and verify
-
-1. Import only records explicitly approved for the target register.
-2. Use stable IDs and preserve original IDs.
-3. Append migration metadata; do not rewrite the source artifact.
-4. Verify record counts, unique IDs, source fingerprints, links, classifications and competency mappings.
-5. Compare a sample and all high-level competency claims against original evidence.
-6. Record rejected, deferred and unresolved items; do not silently omit them.
-7. Read back the saved target records and confirm the source snapshots remain unchanged.
-
-### Phase 5 — Closeout and rollback
-
-A migration batch is complete only when the inventory reconciles to imported + deferred + rejected + unresolved counts, with reasons for every non-imported item. Preserve the batch manifest and source snapshots. If verification fails, stop the batch and revert only the target import using the recorded batch ID; never delete or alter source originals.
-
-No historical migration is authorized merely by this policy. Scope, sources, mappings and import batch require explicit approval before writes.
-
-## 6. Required record schemas
-
-### Learning Log — chronological event
-
-Each event should include:
-
-- Event ID; event date; record/import date;
-- profession/project/module and learning objective;
+Record only meaningful learning events that occur within this repository's own learning programs. Each entry should include:
+- event ID and event date;
+- profession/module and learning objective;
 - participant and attribution;
 - activity/outcome and original assessment;
-- Learning State (if applicable);
-- Evidence Level before → after (or Not assessed / Not mapped);
-- evidence/artifact type and exact source reference;
-- repository/path/ref/version/fingerprint where available;
-- reviewer/assessor and method;
+- Learning State, if applicable;
+- Evidence Level before → after, or Not assessed / Not mapped;
+- evidence artifact and exact local source reference;
+- assessment method, reviewer and result;
 - simulation/real-world status;
 - limitations, corrections and next step;
-- migration batch/original event ID if imported;
 - saved destination and readback verification.
 
-### Competency Register — current snapshot
+### Competency Register — current local snapshot
 
 Each row should include:
-
 - stable Competency ID and name;
-- profession/module and participant;
-- current Learning State;
-- current Evidence Level;
+- profession/module maintained in this repository;
+- participant;
+- current Learning State and Evidence Level;
 - evidence pointers and assessment criteria;
 - assessor/method/date;
 - scope, limitations and confidence;
-- last reviewed and next assessment;
-- provenance/migration reference where applicable.
+- last reviewed and next assessment.
 
 The Log is chronological. The Register is a current snapshot. Neither replaces source artifacts.
 
-## 7. Synchronization and version control
+Do not add another project's event, lesson, assessment, competency status, evidence reference or reconstructed summary to either file. Do not use an external project's records to fill gaps in these local records. If the user asks to work in another project, follow that project's own workflow and keep its records there.
+
+## 6. Synchronization and version control
 
 No automatic synchronization is assumed among chats, GitHub, Library or plugins. Every mirror update must identify its source revision and be verified by content comparison or fingerprint. A sync operation must not overwrite unique destination-only material without reconciliation.
 
-Changes to this governance standard require versioning, review and an explicit approval record. Until approved, this file is a proposal and must not be represented as an active policy.
+This synchronization rule applies to copies of documents within an explicitly authorized distribution workflow. It does not establish cross-project record synchronization or migration.
 
----
-
-## Appendix A — Source Authority Inventory
-
-This register records exact source identity and known discrepancies. It does not approve another project's content or override its owner.
-
-### A.1 Dasha identity and development charter
-
-| Field | Verified value |
-|---|---|
-| Owner repository | `olegsh247-stack/Dasha` |
-| Canonical path | `docs/dasha-personality-development-and-competencies.md` |
-| Canonical ref | `main` |
-| Document version | 2 |
-| Git blob SHA | `d231f2e203ce512876c2f00cfa5f5526e58b0c08` |
-| Authority designation | Canonical charter, explicitly identified by the Dasha Cross-Project Learning System and Dasha Archive Index |
-| Lifecycle/release approval | The canonical role is designated; no separate release tag/approval record was identified in this audit |
-| Library mirror | `dasha-personality-development-and-competencies.md`, version 1 |
-| Mirror status | **Stale / content differs**; do not use as the current charter |
-| Required action | Reconcile the Library mirror to the GitHub main v2 source through the owning project's approved sync workflow; verify exact content after transfer |
-
-The version 2 file was fetched from both GitHub `main` and the archive branch `docs/restore-module-iii-archive-2026-11-06-current`; both returned the same blob SHA. The branch is 332 commits ahead of main, but this does not affect the charter's main-branch status because the same exact blob is present on main. Do not claim that version 2 exists only on the archive branch.
-
-The plugin core skill is a portable runtime mirror at `skills/dasha-core/SKILL.md` in the private Dasha Assistant plugin. Its exact current content was not compared in this audit; do not claim it is synchronized.
-
-### A.2 Cross-Project Learning System
-
-| Field | Verified value |
-|---|---|
-| Owner repository | `olegsh247-stack/Dasha` |
-| Canonical path | `docs/learning/LEARNING-SYSTEM.md` |
-| Canonical ref | `main` |
-| Git blob SHA | `759a365bba8b5081dabaf638bf7fd4afba61581e` |
-| Version | No explicit semantic document version is declared in the file |
-| Authority designation | The document states that GitHub is the source of truth for verified documentation and Library is a planned mirror. The Dasha Archive Index identifies `LEARNING-SYSTEM.md` as the current operating rules. |
-| Lifecycle status | Identified as current operating rules by the Archive Index; no separate formal lifecycle label or release tag was found |
-| Archive branch comparison | `docs/restore-module-iii-archive-2026-11-06-current` contains the exact same Git blob as `main`; branch age/ahead count does not create a separate authority |
-| Library mirror | `LEARNING-SYSTEM.md`, latest identified revision 2026-11-05 |
-| Mirror comparison | Text content matches GitHub `main` exactly apart from the terminal newline; the earlier 2026-11-04 Library copy is not the latest identified revision |
-| Binding status | **Canonical GitHub source path and fingerprint identified; explicit version/formal lifecycle metadata remain undeclared** |
-| Required action | No source-location action remains. If the owning Dasha project requires a formal semantic version or lifecycle label, its owner must add that metadata in the owning repository. Do not modify the separate Dasha repository or Library from this project. |
-
-The source binding is sufficient to identify the current GitHub content. Do not infer a semantic version or a formal release approval that the source does not declare. The Library copy is a text-equivalent mirror with only a terminal-newline difference; do not describe it as a byte-for-byte match.
-
-### A.3 Central Learning Log and Competency Register
-
-| Field | Learning Log | Competency Register |
-|---|---|---|
-| GitHub repository | `olegsh247-stack/Dasha` | `olegsh247-stack/Dasha` |
-| Current detailed revision observed | v5.0 | v3.0 |
-| GitHub ref observed | `docs/restore-module-iii-archive-2026-11-06-current` | `docs/restore-module-iii-archive-2026-11-06-current` |
-| GitHub blob SHA | `acbf537c15fa9efb1d37756a484c09ec7d64c32c` | `6f610c9d31f829fefa1c6dbba7553577a0063799` |
-| Library revision | v5.0 | v3.0 |
-| Comparison | **Differs**; GitHub contains later entries including MI-32 not present in the Library copy read during audit | **Exact text match** with GitHub branch copy in the comparison performed |
-| Main branch baseline | v3.1, blob `72c90dba1b539857b913c56a6c13ee39764fd73f` | v2.5, blob `93ee6374897b188028fea6057381703ae2be51e4` |
-| Status | **Authority/synchronization unresolved** | **Authority/synchronization unresolved** |
-
-The archive branch is 332 commits ahead of `main`. The existence of v5.0/v3.0 on that branch and in Library does not by itself establish a released/approved cross-project baseline. The Learning Log Library/GitHub difference must be reconciled before migration. Preserve both copies and their unique entries.
-
-### A.4 Rules for consumers
-
-1. Read this register and the owning project's source records before loading cross-project instructions or migrating evidence.
-2. Use a source only when its exact authority binding is verified and its status permits the intended use.
-3. A stale mirror is not a fallback canonical source.
-4. An unresolved source may be consulted for non-conflicting context, but not used to settle a disputed rule or authorize a migration.
-5. Re-verify refs and fingerprints at the start of a material migration or release; this register is a dated snapshot, not a live sync.
-6. Update this register only after readback verification and record the evidence for each status change.
-
-### A.5 Migration gate
-
-No historical Learning Log or Competency Register import into Dasha_Professional is approved by this register. Before a migration batch can start, the owning Dasha project must identify the authoritative record snapshots, reconcile unique Library-only/GitHub-only entries, and approve the exact source refs and inventory. Follow the migration protocol in Sections 5–7 of this document.
+Changes to this governance standard require versioning, review and explicit approval. A proposed revision must not be represented as active policy until approved.

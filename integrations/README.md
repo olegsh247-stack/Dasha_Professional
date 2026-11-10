@@ -6,7 +6,7 @@
 
 ## Purpose
 
-This registry identifies independent projects that may share learning context with Dasha's professional system. It is a navigation and governance index, not a content mirror or synchronization mechanism.
+This registry is a navigation-only directory of independent projects and their boundaries. It does not share learning context, mirror content, synchronize records or authorize access to another project's learning history.
 
 ## Integration rules
 
@@ -14,7 +14,7 @@ This registry identifies independent projects that may share learning context wi
 2. Do not copy whole project files or histories into this repository.
 3. Read from the project's explicitly approved source. Verify its current branch, version and status before relying on it.
 4. A link in this registry does not mean the project is technically connected, synchronized, approved for import or available to every chat.
-5. Transfer only generalizable knowledge when relevant and permitted. Preserve provenance and the source project's boundaries.
+5. Do not transfer learning events, lesson histories, assessments, competency claims or evidence into this repository. A separately approved universal principle may be authored here as a new Core rule only after independent review; it must not reproduce another project's event history or imply transferred competence.
 6. Never infer approval of a profession module from the approval of this repository's Core or universal learning system.
 7. If a repository URL, access status or authoritative branch cannot be verified, mark it as pending verification rather than guessing.
 
@@ -23,7 +23,7 @@ This registry identifies independent projects that may share learning context wi
 | Project | Purpose | Authoritative source | Integration status | Rules |
 |---|---|---|---|---|
 | Crypto | Independent cryptocurrency analysis and data project | [olegsh247-stack/Crypto](https://github.com/olegsh247-stack/Crypto); use the branch and task order designated by that project's own instructions (Plan 100 is its primary task source) | Reference verified; no technical sync | Do not associate it with unrelated repositories. Do not copy its data, plans or runtime artifacts here. |
-| Psychology | Independent psychology learning and professional-development project | Its own repository and approved project records; exact repository URL is not yet verified in this registry workflow | Project identified; link pending verification | Keep its curriculum, lesson records and professional decisions in that project. Do not infer its state from this repository. |
+| Psychology | Independent psychology learning and professional-development project | Its own repository and approved project records; exact repository URL is not yet verified in this registry workflow | Project identified; link pending verification | Keep its curriculum, lesson records, competency register, evidence and professional decisions exclusively in that project. Do not load or reproduce them here, and do not infer its state from this repository. |
 
 ## Connection states
 
