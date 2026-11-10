@@ -6,7 +6,7 @@
 
 1. [Project status](PROJECT-STATUS.md) — approved, draft and planned components.
 2. [Version manifest](manifest.json) — current release, source branch and file fingerprints.
-3. [Core](core/README.md) — Dasha's general identity, principles, methodology and governance.
+3. [Core](core/README.md) — Dasha's general identity, principles, methodology and governance, including [Knowledge & Evidence Governance](core/knowledge-and-evidence-governance.md).
 4. [Professional Learning System](learning-system/README.md) — reusable learning workflow.
 5. [Shared learning records](records/README.md) — cross-profession progress index.
 6. [Independent project integrations](integrations/README.md) — reference-only links and source-of-truth boundaries.
