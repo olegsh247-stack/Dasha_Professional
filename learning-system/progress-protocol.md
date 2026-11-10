@@ -32,7 +32,24 @@ Load the compact orientation set first:
 
 Load detailed lessons, source packs, casebooks and additional Core documents only when needed to teach, verify evidence or resolve a conflict. Never omit the authoritative curriculum or records that establish the continuation point.
 
-## 4. Shared Learning Log format
+## 4. Recovery when progress records are incomplete or inconsistent
+
+Do not restart a program or repeat a lesson merely because one record is missing. Recover the continuation point systematically:
+
+1. Identify the latest authoritative approved curriculum and its version.
+2. Search the profession-specific lesson, casebook and assessment records for the latest completed activity and its evidence.
+3. Compare that evidence with the shared Learning Log and Competency Register. Use the records for their defined roles: the log is chronological, the register is a current snapshot, and profession-specific artifacts hold detailed evidence.
+4. Check the current chat for additional material, but label unsaved information as provisional.
+5. Build a short recovery snapshot with three explicit categories:
+   - **Confirmed** — directly supported by an accessible authoritative record or artifact.
+   - **Inferred** — plausible from partial evidence but not independently confirmed.
+   - **Unknown / conflicting** — missing, inaccessible or inconsistent information.
+6. Resume from the latest confirmed point. Do not repeat confirmed completed work. If the next activity depends on an unresolved conflict or an unconfirmed prerequisite, pause only that dependent step and ask one focused question; otherwise continue while clearly marking the limitation.
+7. If no reliable completion point can be established, do not invent one or silently restart. Explain the narrow uncertainty and offer the smallest diagnostic check or recap needed to establish the next step.
+
+Never promote an inferred or provisional activity into a completed lesson, assessment result or competency achievement without evidence.
+
+## 5. Shared Learning Log format
 
 Append one concise entry for each meaningful milestone:
 
@@ -50,7 +67,7 @@ Append one concise entry for each meaningful milestone:
 
 The log is chronological. Do not rewrite old entries merely to make the history look cleaner; record corrections as new events and preserve provenance.
 
-## 5. Competency Register format
+## 6. Competency Register format
 
 Maintain one row per competency and participant, where appropriate:
 
@@ -66,11 +83,11 @@ Maintain one row per competency and participant, where appropriate:
 
 The register is a current snapshot, not a second narrative journal. Every demonstrated achievement must point to evidence and criteria.
 
-## 6. Evidence rules
+## 7. Evidence rules
 
 Distinguish reading, explanation, guided exercise, independent application, repeated performance under varied conditions, and external or independent assessment. A higher level requires stronger evidence. Keep Dasha's learning evidence separate from the user's.
 
-## 7. End-of-session update
+## 8. End-of-session update
 
 At the end of a meaningful lesson or milestone:
 
@@ -106,14 +123,14 @@ Reason not saved:
 
 Include the actual lesson outcome and evidence, not placeholders, whenever that information is available. If a field is genuinely unknown, mark it `unknown` rather than inventing it. Clearly state that the record has not been written to GitHub or Library. The user should be able to transfer this record without reconstructing the lesson.
 
-## 8. Avoiding repeated questions
+## 9. Avoiding repeated questions
 
 Before asking the user to restate a preference, background detail, prior decision or completed lesson, search relevant records and current project files. Ask only if information is absent, conflicting, outdated or materially ambiguous.
 
-## 9. Cross-profession transfer
+## 10. Cross-profession transfer
 
 Transfer a competency only when its meaning and evidence genuinely apply to the destination profession. Record the source profession, original evidence, limits and any additional validation required.
 
-## 10. Synchronization and versioning
+## 11. Synchronization and versioning
 
 No automatic synchronization is assumed between chats, GitHub, Library or plugins. Every saved update should identify the target branch or source, date and relevant file. Preserve historical entries and use version control for changes. Do not overwrite profession-specific sources from the shared system.
