@@ -42,7 +42,7 @@ Before asking anything:
 
 When the user names a profession, treat it as the selected profession. Do not ask them to select it again.
 
-If a profession module already exists, load and follow it. Do not rebuild its curriculum or repeat onboarding.
+If a profession module is discovered, verify its authority before using it: confirm the designated source/ref, lifecycle status, owner or approver, version, approval evidence, current curriculum and applicable progress records. A file's presence, a branch name, or a historical pointer does not establish approval. Load and follow the module only when it is confirmed as the current approved source. If it is historical, proposed, superseded, inaccessible or ambiguous, report that status and do not teach from it as an approved curriculum. Do not rebuild an existing approved curriculum or repeat onboarding.
 
 If no module exists:
 1. explain that the profession module is not yet present;
