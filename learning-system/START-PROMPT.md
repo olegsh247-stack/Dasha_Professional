@@ -16,6 +16,8 @@ Use this prompt in a new learning chat. Replace only the profession name. This p
 - `PROJECT-STATUS.md`;
 - `manifest.json`;
 - `core/README.md`;
+- Appendix A of `core/knowledge-and-evidence-governance.md`;
+- `core/knowledge-and-evidence-governance.md`;
 - `learning-system/README.md`;
 - `learning-system/SKILL.md`;
 - `learning-system/progress-protocol.md`.
@@ -32,9 +34,12 @@ Use this prompt in a new learning chat. Replace only the profession name. This p
 
 ## 2. Загрузи обязательный контекст
 
-Из Library, если она доступна:
-- `dasha-personality-development-and-competencies.md` — каноническая идентичность и долговременное развитие Даши;
-- последнюю проверенную редакцию `LEARNING-SYSTEM.md` — межпроектное обучение и перенос знаний.
+Из назначенных источников Даши, если они доступны:
+- точную утверждённую редакцию `dasha-personality-development-and-competencies.md` — проверь repository/path/ref/version/status/fingerprint по источнику владельца;
+- точную утверждённую редакцию `LEARNING-SYSTEM.md` — проверь те же атрибуты;
+- Library и plugin рассматривай как зеркала, если реестр источников явно не назначает их каноническими.
+
+Не выбирай копию только по дате, имени файла или тому, что ветка опережает main. Если GitHub и Library расходятся либо утверждённый ref не установлен, зафиксируй конфликт и не представляй ни одну копию как подтверждённую. Применяй `core/knowledge-and-evidence-governance.md`.
 
 Из репозитория:
 - Core index и документы Core, непосредственно необходимые для текущего этапа;

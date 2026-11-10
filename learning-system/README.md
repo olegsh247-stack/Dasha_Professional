@@ -13,16 +13,16 @@ A reusable system for launching and conducting structured professional education
 
 1. **Core** — identity, principles, universal methodology, quality, governance and knowledge-management rules.
 2. **Professional Learning System** — universal learning behavior, startup protocol, module template and progress protocol.
-3. **Profession module** — profession-specific curriculum, competencies, standards, sources, cases, exercises and assessment criteria.
-4. **Records** — shared Learning Log and Competency Register, plus profession-specific evidence and detailed learning artifacts.
-5. **Independent project integrations** — reference-only links in the active [integrations registry](../integrations/README.md). Independent projects remain their own sources of truth; no live technical connections or automatic synchronization are implied.
+3. **Knowledge & Evidence Governance** — exact source authority, separate Learning State and E0–E5 Evidence Level, and provenance-safe migration rules.
+4. **Profession module** — profession-specific curriculum, competencies, standards, sources, cases, exercises and assessment criteria.
+5. **Records** — shared Learning Log and Competency Register, plus profession-specific evidence and detailed learning artifacts.
+6. **Independent project integrations** — reference-only links in the active [integrations registry](../integrations/README.md). Independent projects remain their own sources of truth; no live technical connections or automatic synchronization are implied.
 
-## Governing Library documents
+## Governing cross-project documents
 
-- `dasha-personality-development-and-competencies.md` — canonical Dasha identity and long-term development charter.
-- `LEARNING-SYSTEM.md` — cross-project learning, knowledge transfer and centralization rules.
+The Dasha charter and Cross-Project Learning System are owned by the separate Dasha project. Their exact approved repository/path/ref/version/status/fingerprint must be verified before use. Library and plugin copies are mirrors unless an explicit authority record says otherwise. A newer timestamp or a branch ahead of main is not approval.
 
-Load the latest verified versions from Library when available. The 2026-11-05 revision was the latest identified on 2026-11-10 and supersedes the 2026-11-04 copy. These documents are not automatically synchronized with this repository.
+The 2026-11-10 audit confirmed the canonical Dasha charter on GitHub `main`, version 2, blob `d231f2e203ce512876c2f00cfa5f5526e58b0c08`. The Library copy is version 1 and is a stale mirror. The exact authority binding for the separate Cross-Project Learning System document remains unresolved; Appendix A of [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md) records the evidence and required owner action.
 
 ## Start a learning chat
 
@@ -30,7 +30,7 @@ Use [START-PROMPT.md](START-PROMPT.md). The prompt points to the current approve
 
 The startup process has two levels:
 
-- **Level 1 — required orientation:** project status and manifest, the two governing Library documents (if accessible), Core index, this system's Skill and progress protocol, the selected profession's entry documents, and the relevant shared/profession records.
+- **Level 1 — required orientation:** project status and manifest, exact approved cross-project sources and Appendix A of Knowledge & Evidence Governance (including a comparison of mirrors), Core index, this system's Skill and progress protocol, the selected profession's entry documents, and the relevant shared/profession records.
 - **Level 2 — on-demand context:** load individual Core documents, prior lessons, casebooks, source packs and related project artifacts only when the lesson or a conflict requires them.
 
 If the profession module is absent from `main`, follow only the alternative-source pointers explicitly recorded in [PROJECT-STATUS.md](../PROJECT-STATUS.md). Do not infer approval from a branch name or inspect unrelated branches.
@@ -40,6 +40,7 @@ Do not confuse a shorter startup with permission to skip the profession's author
 ## Files
 
 - [SKILL.md](SKILL.md) — universal instructions for all profession-learning chats.
+- [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md) — source authority, separate Learning State / Evidence Level, provenance and migration.
 - [START-PROMPT.md](START-PROMPT.md) — compact reusable startup prompt; specify a profession once.
 - [profession-template.md](profession-template.md) — standard for creating new profession modules.
 - [progress-protocol.md](progress-protocol.md) — continuity, evidence and recordkeeping rules.

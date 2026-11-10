@@ -15,18 +15,20 @@ This Skill governs **how learning is organized**. It does not replace the profes
 
 At the beginning of a learning chat, retrieve the current versions of:
 
-1. Library document dasha-personality-development-and-competencies.md — canonical identity and long-term development charter.
-2. Latest Library revision of LEARNING-SYSTEM.md — cross-project learning, transfer and knowledge-governance rules. If multiple copies exist, prefer the latest verified revision; the 2026-11-05 revision was the latest identified on 2026-11-10 and supersedes the 2026-11-04 copy.
-3. core/README.md;
-4. relevant Core documents: identity, principles, methodology, quality, error management, communication, knowledge management and governance;
-5. learning-system/README.md;
-6. this Skill, learning-system/SKILL.md;
-7. learning-system/progress-protocol.md;
-8. the selected profession's README.md, curriculum.md and profession-specific Skill, if present;
-9. shared records: records/learning-log.md and records/competency-register.md;
-10. profession-specific records and prior learning artifacts, if they exist.
+1. The exact approved revision of the Dasha charter, resolved through the owning project's source register. Its designated repository/path/ref/version/fingerprint must be checked; a Library copy is a mirror unless explicitly designated otherwise.
+2. The exact approved revision of Cross-Project Learning System (LEARNING-SYSTEM.md), likewise checked by source ref, version, status and fingerprint. Do not select a copy solely by Library date or filename.
+3. Appendix A of core/knowledge-and-evidence-governance.md — exact source bindings, versions, fingerprints and open discrepancies.
+4. core/knowledge-and-evidence-governance.md — canonical-source, Learning State, E0–E5 and migration rules.
+5. core/README.md;
+6. relevant Core documents: identity, principles, methodology, quality, error management, communication, knowledge management and governance;
+7. learning-system/README.md;
+8. this Skill, learning-system/SKILL.md;
+9. learning-system/progress-protocol.md;
+10. the selected profession's README.md, curriculum.md and profession-specific Skill, if present;
+11. shared records: records/learning-log.md and records/competency-register.md;
+12. profession-specific records and prior learning artifacts, if they exist.
 
-Use the repository branch or version explicitly designated as current by the user or project instructions. Do not silently use an older branch, stale local copy or a guessed path.
+Use the exact repository branch, tag or immutable commit explicitly designated as approved by the owning source register. Verify its version, lifecycle status and fingerprint. A newer feature branch is not approved merely because it is ahead of main. If the designated ref is absent or conflicts with a Library/plugin mirror, report the conflict and follow the conflict procedure in core/knowledge-and-evidence-governance.md; do not silently choose one copy.
 
 If a required source is inaccessible, say exactly which source could not be read. Never claim to have loaded, checked or saved something that you did not actually access. If Library access is unavailable, report that limitation and continue only with the accessible repository sources; do not pretend the Library documents were loaded.
 
@@ -62,7 +64,7 @@ Keep four layers distinct:
 - **Profession module:** what the profession requires and in what sequence it is taught.
 - **Records:** what has actually been studied, practiced, demonstrated and verified.
 
-The two Library documents listed above govern Dasha's general identity and cross-project learning/knowledge transfer. They complement this repository; they do not replace profession-specific project sources or authorize copying their contents wholesale.
+The Dasha charter and Cross-Project Learning System govern identity and cross-project learning only at their exact approved revisions. They complement this repository; they do not replace profession-specific project sources or authorize copying their contents wholesale. Their repository/path/ref/version/fingerprint must be recorded and reconciled before use.
 
 Never copy a full profession curriculum into this Skill. Never let a generic learning rule override a profession-specific safety, legal, regulatory or technical requirement.
 
@@ -133,16 +135,13 @@ Use transparent criteria and consistent scoring where scoring helps. Do not infl
 
 ## 9. Competency and progress states
 
-Use the shared states consistently:
-- **Not started** — no learning activity recorded.
-- **Studied** — material reviewed; not proof of practical mastery.
-- **In progress** — active learning.
-- **Practiced** — applied in exercises, simulations or real tasks.
-- **Demonstrated achievement** — evidence has been checked against stated criteria.
-- **Open question** — unresolved gap, contradiction or uncertainty.
-- **Future direction** — not currently in the active plan.
+Record two independent dimensions for each participant and competency:
 
-Keep user and Dasha evidence separate. Attribute work to the correct participant. Record the method and limits of each assessment.
+**Learning State:** Not started / Studied / In progress / Practiced / Demonstrated achievement / Open question / Future direction.
+
+**Evidence Level:** E0 Not assessed / E1 Exposure / E2 Explained / E3 Applied with assistance / E4 Independently applied / E5 Repeatably verified.
+
+Use the definitions and minimum evidence in core/knowledge-and-evidence-governance.md. Never infer an E-level from Learning State, lesson count, confidence or user rating. Keep user and Dasha evidence separate; record task scope, artifact, reviewer, assessment method, simulation/real-world status and limitations.
 
 ## 10. Continuity across chats
 
