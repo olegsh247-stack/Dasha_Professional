@@ -41,6 +41,7 @@ Do not confuse a shorter startup with permission to skip the profession's author
 ## Files
 
 - [SKILL.md](SKILL.md) — universal instructions for all profession-learning chats.
+- [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md) — source authority, separate Learning State / Evidence Level, provenance and migration.
 - [START-PROMPT.md](START-PROMPT.md) — compact reusable startup prompt; specify a profession once.
 - [profession-template.md](profession-template.md) — standard for creating new profession modules.
 - [progress-protocol.md](progress-protocol.md) — continuity, evidence and recordkeeping rules.
