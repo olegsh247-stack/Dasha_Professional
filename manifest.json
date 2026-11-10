@@ -4,45 +4,51 @@
   "repository": "olegsh247-stack/Dasha_Professional",
   "current_source": {
     "branch": "main",
-    "approved_baseline_commit": "f4db2a6e6c9b748dc512d8657a817b176e50ffb8",
-    "note": "Approved v1.0.2 release metadata was finalized in PR #10. Subsequent corrective commits on main are part of the same v1.0.2 line; the approved baseline remains the PR #10 merge commit. Component fingerprints identify the exact current approved files on main."
+    "approved_baseline_commit": "27d219f6e798c62c05bd1bc098bb3bf32d40748b",
+    "note": "Approved v1.1.0 content baseline: PR #11 merge commit 27d219f6e798c62c05bd1bc098bb3bf32d40748b. The release adopts knowledge and evidence governance; this metadata alignment records the exact current component fingerprints. No historical record migration is included or authorized."
   },
   "release": {
-    "version": "1.0.2",
+    "version": "1.1.0",
     "status": "approved",
     "approved_date": "2026-11-10",
-    "previous_version": "1.0.1"
+    "previous_version": "1.0.2"
   },
   "components": {
     "core": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "status": "approved",
       "entrypoint": "core/README.md",
-      "blob_sha": "e0f86ab117660840324eaa7e854c4104f63d15b8"
+      "blob_sha": "f3c0b2e9b591ee6e8f28aa285ece0b25f4360d63"
     },
     "professional_learning_system": {
-      "version": "1.0.2",
+      "version": "1.1.0",
       "status": "approved",
       "entrypoint": "learning-system/README.md",
-      "blob_sha": "7e64e0f3996e0e29cc6d0d5348b19e70ebcc6d08"
+      "blob_sha": "6f179cd519897a1dd752a1b9263e240a7aa37604"
     },
     "universal_skill": {
-      "version": "1.0.1",
+      "version": "1.1.0",
       "status": "approved",
       "entrypoint": "learning-system/SKILL.md",
-      "blob_sha": "0f9140b6c3140167c9820486eee8b96c4d8538ef"
+      "blob_sha": "432596b2a032c01bc777dced0091381b1b6b7a08"
     },
     "startup_prompt": {
-      "version": "1.0.1",
+      "version": "1.1.0",
       "status": "approved",
       "entrypoint": "learning-system/START-PROMPT.md",
-      "blob_sha": "849661c2f53b5ce7d9534bf0b9e2080d395ff63f"
+      "blob_sha": "9e40f73a09b9ee737ad2273169b42024e16b0007"
     },
     "progress_protocol": {
-      "version": "1.0.1",
+      "version": "1.1.0",
       "status": "approved",
       "entrypoint": "learning-system/progress-protocol.md",
-      "blob_sha": "0f06eef4d663a938ee2a7bfea553581051891460"
+      "blob_sha": "4d980fa33ddc77b9612359a0b75c3147c3778dde"
+    },
+    "knowledge_evidence_governance": {
+      "version": "1.0.0",
+      "status": "approved",
+      "entrypoint": "core/knowledge-and-evidence-governance.md",
+      "blob_sha": "f41d13a8fed3f36c13b2d104a717c44abc902aa7"
     }
   },
   "policy": {

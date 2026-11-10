@@ -2,9 +2,8 @@
 
 **Repository:** `olegsh247-stack/Dasha_Professional`  
 **Current approved source:** `main`  
-**Current approved release:** v1.0.2  
+**Current approved release:** v1.1.0  
 **Approved:** 2026-11-10  
-**Candidate architecture update:** `feat/knowledge-evidence-governance-v1` — pending review; not approved for operational use.
 
 ## Lifecycle definitions
 
@@ -19,8 +18,8 @@
 
 | Component | Version | Status | Notes |
 |---|---:|---|---|
-| Core | 1.0.0 | Approved | Current approved baseline; proposed knowledge/evidence governance addition is pending review on `feat/knowledge-evidence-governance-v1`. |
-| Professional Learning System | 1.0.2 | Approved | Current approved baseline; proposed source-authority and dual-axis progress refinements are pending review. |
+| Core | 1.1.0 | Approved | Includes the canonical-source and evidence-governance standard adopted in PR #11. |
+| Professional Learning System | 1.1.0 | Approved | Includes exact source-authority checks, independent Learning State and E0–E5 dimensions, provenance and migration controls. |
 | Universal Learning Skill | 1.0.1 | Approved | Current approved baseline; proposed exact-ref verification and dual-axis evidence rules are pending review. |
 | Startup and progress protocol | 1.0.1 | Approved | Current approved baseline; proposed canonical-source, provenance and migration rules are pending review. |
 | Risk Management profession module | — | Not established on `main` | A historical source pointer is listed below. Its professional content and approval status are not assessed by this repository audit; verify them in the profession's own authoritative workflow before use. |
@@ -31,14 +30,18 @@
 | Repository quality checks | — | Active | Markdown lint and link validation run on pushes, pull requests and manual dispatch. |
 | `main` branch protection | — | Not enabled by design | No mandatory branch protection/ruleset is configured. This is an intentional usability decision: avoid restrictive controls that previously disrupted the owner's workflow. CI continues to run on pushes and pull requests; PRs are the preferred change path, not a technical requirement. |
 
-## Proposed architecture update — not yet approved
+## v1.1.0 release record
 
-The branch `feat/knowledge-evidence-governance-v1` contains a proposed cross-cutting update:
-- `core/knowledge-and-evidence-governance.md` — canonical-source control, separate Learning State and E0–E5 Evidence Level, and a staged historical-migration protocol;
-- Appendix A of `core/knowledge-and-evidence-governance.md` — exact external source bindings, fingerprints and known discrepancies;
-- aligned Core, Skill, startup prompt, progress protocol and shared record templates.
+Approved on 2026-11-10. The release incorporates the cross-cutting knowledge and evidence governance architecture merged in PR #11 (commit `27d219f6e798c62c05bd1bc098bb3bf32d40748b`).
 
-The proposal does not import historical records, change competency levels, alter the separate Dasha repository or Library, or designate an unresolved external record as an approved migration baseline. The Dasha charter itself is verified on the separate repository's `main` at version 2; its Library mirror is stale. See Appendix A of `core/knowledge-and-evidence-governance.md`. Current approved release remains v1.0.2 on `main` until review and an explicit merge.
+Included:
+- canonical-source authority rules and Appendix A source inventory;
+- independent Learning State and E0–E5 Evidence Level dimensions;
+- evidence attribution and provenance requirements;
+- staged historical migration controls, without authorizing or performing a migration;
+- aligned Core, Professional Learning System, Skill, startup prompt, progress protocol and shared record templates.
+
+No historical records were imported, no competency levels were changed, and no edits were made to the separate Dasha repository or Library. Unresolved external source bindings remain unresolved and must not be treated as approved migration baselines.
 
 ## Profession module discovery pointers
 
