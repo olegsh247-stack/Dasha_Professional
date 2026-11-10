@@ -9,13 +9,16 @@ Append significant learning milestones using the schema below. Keep entries chro
 ### [EVENT-ID] — [YYYY-MM-DD] — [Profession / module / lesson]
 
 - **Participant:** user / Dasha / joint
+- **Learning State:** if applicable
+- **Evidence Level before → after:** E0–E5 or Not mapped
 - **Learning objective:**
 - **Outcome:**
 - **Evidence / artifact:**
 - **Assessment and result:**
 - **Corrections / open questions:**
 - **Next step:**
-- **Source reference:**
+- **Source reference:** exact repository/system, path, ref, version and fingerprint where available
+- **Original event ID / migration batch:** if imported
 - **Saved / verified:**
 
 ## Recorded milestones
@@ -34,4 +37,4 @@ Append significant learning milestones using the schema below. Keep entries chro
 
 ## Historical import status
 
-No detailed historical lesson transcripts or assessment records have been imported into this shared log. Existing training projects remain authoritative until their records are audited and mapped here. Do not treat missing imports as evidence that no prior learning occurred.
+No detailed historical lesson transcripts or assessment records have been imported into this shared log. Existing training projects remain authoritative until their records are inventoried, classified, mapped and explicitly approved for migration under [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md). Preserve original event IDs, event dates, participant, authorship, exact source refs/fingerprints and artifact lineage. Do not treat missing imports as evidence that no prior learning occurred; do not silently merge conflicting GitHub/Library copies or retroactively promote evidence.
