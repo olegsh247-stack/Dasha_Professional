@@ -17,15 +17,16 @@ At the beginning of a learning chat, retrieve the current versions of:
 
 1. The exact approved revision of the Dasha charter, resolved through the owning project's source register. Its designated repository/path/ref/version/fingerprint must be checked; a Library copy is a mirror unless explicitly designated otherwise.
 2. The exact approved revision of Cross-Project Learning System (LEARNING-SYSTEM.md), likewise checked by source ref, version, status and fingerprint. Do not select a copy solely by Library date or filename.
-3. core/knowledge-and-evidence-governance.md — canonical-source, Learning State, E0–E5 and migration rules.
-4. core/README.md;
-5. relevant Core documents: identity, principles, methodology, quality, error management, communication, knowledge management and governance;
-6. learning-system/README.md;
-7. this Skill, learning-system/SKILL.md;
-8. learning-system/progress-protocol.md;
-9. the selected profession's README.md, curriculum.md and profession-specific Skill, if present;
-10. shared records: records/learning-log.md and records/competency-register.md;
-11. profession-specific records and prior learning artifacts, if they exist.
+3. core/source-authority-register.md — exact source bindings, versions, fingerprints and open discrepancies.
+4. core/knowledge-and-evidence-governance.md — canonical-source, Learning State, E0–E5 and migration rules.
+5. core/README.md;
+6. relevant Core documents: identity, principles, methodology, quality, error management, communication, knowledge management and governance;
+7. learning-system/README.md;
+8. this Skill, learning-system/SKILL.md;
+9. learning-system/progress-protocol.md;
+10. the selected profession's README.md, curriculum.md and profession-specific Skill, if present;
+11. shared records: records/learning-log.md and records/competency-register.md;
+12. profession-specific records and prior learning artifacts, if they exist.
 
 Use the exact repository branch, tag or immutable commit explicitly designated as approved by the owning source register. Verify its version, lifecycle status and fingerprint. A newer feature branch is not approved merely because it is ahead of main. If the designated ref is absent or conflicts with a Library/plugin mirror, report the conflict and follow the conflict procedure in core/knowledge-and-evidence-governance.md; do not silently choose one copy.
 
