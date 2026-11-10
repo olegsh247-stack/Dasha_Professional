@@ -1,6 +1,7 @@
 # Professional Learning System
 
-**Status:** first implementation, pending audit.
+**Status:** first implementation, pending audit.  
+**Working branch:** `feat/universal-learning-system`.
 
 ## Purpose
 
@@ -16,7 +17,7 @@ A reusable system for launching and conducting structured professional education
 
 ## Start a learning chat
 
-Use [START-PROMPT.md](START-PROMPT.md). The chat must load the current Core, this system, the selected profession module and relevant records before teaching.
+Use [START-PROMPT.md](START-PROMPT.md). The chat must load the current Core, this system, the selected profession module and relevant records before teaching. Until this branch is approved and merged, explicitly load `feat/universal-learning-system`.
 
 ## Files
 
