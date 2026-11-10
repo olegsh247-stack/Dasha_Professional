@@ -29,7 +29,7 @@ Append significant learning milestones using the schema below. Keep entries chro
 - **Assessment and result:** this is a program-design decision, not evidence that either participant has completed lessons or demonstrated professional competence.
 - **Corrections / open questions:** detailed historical Risk Management lesson records, if any, have not yet been audited and imported. The profession module's content and approval status are outside the scope of this shared architecture record and must be verified in its own workflow. No competency level is inferred.
 - **Next step:** launch the Risk Management learning chat only after verifying the current authoritative module source and its approval status; later create and approve additional profession modules as selected.
-- **Source reference:** historical module location: `feat/universal-learning-system:professions/risk-management/curriculum.md` and `feat/universal-learning-system:professions/risk-management/SKILL.md` (not available on `main` as of this record revision); project conversation dated 2026-11-10.
+- **Source reference:** canonical Risk Management discovery pointer: branch `feat/risk-management-learning-kit`, recorded in [PROJECT-STATUS.md](../PROJECT-STATUS.md). The earlier branch `feat/universal-learning-system` is retained here solely as historical provenance for the files excluded from PR #2; it is not a second current discovery pointer.
 - **Saved / verified:** baseline entry saved in `records/learning-log.md` on `main`; historical source references preserved with explicit branch provenance.
 
 ## Historical import status
