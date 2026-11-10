@@ -277,8 +277,8 @@ The following are verified source candidates and observed copies, **not owner-ap
 | Owner repository | `olegsh247-stack/Dasha` | `olegsh247-stack/Dasha` |
 | GitHub `main` snapshot | v3.1; blob `72c90dba1b539857b913c56a6c13ee39764fd73f`; 166,211 characters | v2.5; blob `93ee6374897b188028fea6057381703ae2be51e4`; 15,536 characters |
 | Archive-branch snapshot | `docs/restore-module-iii-archive-2026-11-06-current`; v5.0; blob `81c28c3acb22c40c467e193ecd309ede60806efa`; 263,927 characters | Same branch; v3.1; blob `a6a6c11339b1d9b43764c70b46aa33e4f9b4d2d5`; 18,944 characters |
-| Library current copy | `Dasha-Learning-Log.md`; v5.0; last modified 2026-11-10 19:02:56 UTC; 202,128 extracted characters / 1,000 lines | `Dasha-Competency-Register.md`; v3.0; last modified 2026-11-07 19:31:41 UTC; 18,573 extracted characters |
-| GitHub archive ↔ Library comparison | **Not identical.** Distinct normalized nonblank lines: 242 only in GitHub and 14 only in Library; 100 GitHub headings versus 74 Library headings. | **Not identical.** Distinct normalized nonblank lines: 3 only in GitHub and 2 only in Library. |
+| Library current copy | `Dasha-Learning-Log.md`; v5.0; last modified 2026-11-10 19:33:48 UTC; 202,720 extracted characters / 1,000 lines | `Dasha-Competency-Register.md`; v3.1; last modified 2026-11-10 19:33:55 UTC; 18,922 extracted characters / 124 lines |
+| GitHub archive ↔ Library comparison | **Not identical.** Distinct normalized nonblank lines: 239 only in GitHub and 14 only in Library; 100 GitHub headings versus 74 Library headings. | **Not identical.** Both copies are v3.1; one distinct normalized nonblank line occurs only in GitHub and one only in Library. The substantive situational-thinking evidence row matches; the differing line is the change-history description of archive coverage. |
 | Main-branch status | v3.1 is older than the v5.0 archive candidate | v2.5 is older than the v3.1 archive candidate |
 | Authority / migration status | **Unresolved** | **Unresolved** |
 
@@ -294,13 +294,13 @@ The following are verified source candidates and observed copies, **not owner-ap
 
 #### Competency Register reconciliation findings
 
-- The archive-branch v3.1 and Library v3.0 copies are **not identical**. The GitHub copy adds a v3.1 change-history entry and updates the situational-thinking evidence from eight to thirteen complete original lessons; the Library copy retains the earlier eight-lesson evidence statement.
+- The archive-branch and Library copies are both v3.1 and have the same substantive situational-thinking evidence row (thirteen complete original lessons). They differ in one change-history line: GitHub says the full Module III MI-01…MI-33 archive was confirmed, while Library instead records Module II Library mirroring as a coverage note. This is a documentation/provenance difference, not evidence of a competency-level change.
 - The GitHub `main` v2.5 copy is older. Neither v3.0 Library nor v3.1 archive snapshot is yet an owner-approved migration baseline.
 - The archive branch also contains `docs/learning/COMPETENCY-REGISTER-ADDENDUM-2026-11-03.md` (blob `3e63c48435d8da29cc258f30319ecf58645a5a85`). It records a process correction and explicitly states that no competency level is promoted. Preserve it as a supplementary evidence artifact; do not treat it as a separate register or as authority to promote a level.
 
 #### Candidate-source decision and remaining approval
 
-For the next reconciliation pass, use the archive-branch v5.0 Learning Log and v3.1 Competency Register as **working candidates only**. The Library Archive Index points to that branch, but its register version pointer is stale; the Library copies retain distinct content and chronology. Do not promote either candidate to an approved baseline until the owner explicitly approves the exact repository, branch, paths, blob SHAs and the reconciled deltas for both documents.
+For the next reconciliation pass, use the archive-branch v5.0 Learning Log and v3.1 Competency Register as **working candidates only**. The Library Learning Log and Competency Register are current mirrors with meaningful differences still requiring reconciliation; the Library Archive Index and Sync Gap Register should be rechecked against their latest copies before final source approval. Do not promote either candidate to an approved baseline until the owner explicitly approves the exact repository, branch, paths, blob SHAs and the reconciled deltas for both documents.
 
 The Library Learning Log and Competency Register are not exact mirrors of the current archive-branch snapshots. Preserve all snapshots. No automatic overwrite, silent deduplication, historical deletion, competency-level promotion or migration is permitted.
 
