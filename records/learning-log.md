@@ -30,7 +30,7 @@ Append significant learning milestones using the schema below. Keep entries chro
 - **Corrections / open questions:** detailed historical Risk Management lesson records, if any, have not yet been audited and imported. No competency level is inferred.
 - **Next step:** use the universal learning system to launch the Risk Management learning chat; later create and approve additional profession modules as selected.
 - **Source reference:** `professions/risk-management/curriculum.md`; `professions/risk-management/SKILL.md`; project conversation dated 2026-11-10.
-- **Saved / verified:** saved to `records/learning-log.md` on `feat/universal-learning-system`; read-back verification required after update.
+- **Saved / verified:** saved to `records/learning-log.md` on `feat/universal-learning-system`; read-back verification completed on 2026-11-10.
 
 ## Historical import status
 
