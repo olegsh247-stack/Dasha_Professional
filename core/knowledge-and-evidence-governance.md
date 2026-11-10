@@ -52,18 +52,16 @@ If copies differ, do not merge them by choosing the newest or longest copy. Reco
 - pause only actions whose correctness depends on the unresolved rule;
 - create a reconciliation record and verify the selected copy by readback.
 
-### 2.4 Current known source conflict (baseline observation)
+### 2.4 Current source bindings and unresolved items
 
-At the time this proposal was prepared:
+The companion [Source Authority Register](source-authority-register.md) records the exact audited bindings. The 2026-11-10 audit established:
 
-- the Dasha charter exists in the GitHub repository `olegsh247-stack/Dasha` at `docs/dasha-personality-development-and-competencies.md`, version 2, on branch `docs/restore-module-iii-archive-2026-11-06-current`;
-- the Library copy found during the audit is version 1 and differs from that GitHub file;
-- the branch is not the repository's `main` branch and was reported as 332 commits ahead of `main`;
-- therefore the repository identity can be named, but the exact approved canonical revision is **not yet confirmed** by this proposal.
+- **Dasha charter:** GitHub repository `olegsh247-stack/Dasha`, path `docs/dasha-personality-development-and-competencies.md`, branch `main`, version 2, blob SHA `d231f2e203ce512876c2f00cfa5f5526e58b0c08`. The Dasha Cross-Project Learning System and Archive Index identify this file as the canonical charter. The Library copy is version 1 and differs; it is a stale mirror, not an equal authority. The same version 2 blob was also present on the archive branch. That branch is 332 commits ahead of main, but the charter itself is already on main.
+- **Cross-Project Learning System:** the latest identified Library item is `LEARNING-SYSTEM.md`, dated 2026-11-05 and listed as current operating rules. Its own text says GitHub is the source of truth and Library is a planned mirror, but a matching GitHub source path/ref and fingerprint were not confirmed. Its exact authority binding remains unresolved.
+- **Central Learning Log:** GitHub branch v5.0 and Library v5.0 differ; the GitHub copy includes later entries (including MI-32) not present in the Library copy read during audit.
+- **Central Competency Register:** GitHub branch v3.0 and Library v3.0 matched exactly in the comparison performed. The detailed v3.0 snapshot is on an archive branch 332 commits ahead of main; its approved release binding remains unresolved.
 
-This proposal does not promote that branch, merge it, or declare its version 2 content approved. The charter's exact approved ref must be reconciled and recorded by its owning project before downstream chats treat one revision as the approved baseline.
-
-The Cross-Project Learning System document must follow the same exact-ref and fingerprint rule. A Library date label alone is insufficient.
+The repository identity and charter source are therefore resolved; mirror synchronization and the authority binding for the cross-project system and historical central records remain open. Do not promote the unresolved records to an approved migration baseline. See the Source Authority Register for hashes, statuses and required owner actions.
 
 ## 3. Two independent dimensions: Learning State and Evidence Level
 
