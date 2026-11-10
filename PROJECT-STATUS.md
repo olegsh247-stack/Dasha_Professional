@@ -2,8 +2,9 @@
 
 **Repository:** `olegsh247-stack/Dasha_Professional`  
 **Current approved source:** `main`  
-**Current release:** v1.0.2  
-**Approved:** 2026-11-10
+**Current approved release:** v1.0.2  
+**Approved:** 2026-11-10  
+**Candidate architecture update:** `feat/knowledge-evidence-governance-v1` — pending review; not approved for operational use.
 
 ## Lifecycle definitions
 
@@ -18,10 +19,10 @@
 
 | Component | Version | Status | Notes |
 |---|---:|---|---|
-| Core | 1.0.0 | Approved | First edition approved 2026-11-10 and merged to `main` in PR #2. |
-| Professional Learning System | 1.0.2 | Approved | Includes readiness and authority-verification consistency refinements merged through PRs #8 and #9 on 2026-11-10. |
-| Universal Learning Skill | 1.0.1 | Approved | Requires explicit verification of a profession module's source, lifecycle status and approval before use; no profession-specific curriculum is embedded in the Skill. |
-| Startup and progress protocol | 1.0.1 | Approved | Current-source guidance, compact two-level loading and complete unsaved-record fallback. |
+| Core | 1.0.0 | Approved | Current approved baseline; proposed knowledge/evidence governance addition is pending review on `feat/knowledge-evidence-governance-v1`. |
+| Professional Learning System | 1.0.2 | Approved | Current approved baseline; proposed source-authority and dual-axis progress refinements are pending review. |
+| Universal Learning Skill | 1.0.1 | Approved | Current approved baseline; proposed exact-ref verification and dual-axis evidence rules are pending review. |
+| Startup and progress protocol | 1.0.1 | Approved | Current approved baseline; proposed canonical-source, provenance and migration rules are pending review. |
 | Risk Management profession module | — | Not established on `main` | A historical source pointer is listed below. Its professional content and approval status are not assessed by this repository audit; verify them in the profession's own authoritative workflow before use. |
 | Other profession modules | — | Not started | No other approved modules are indexed on `main`. |
 | Integrations registry | 1.0 | Active | Reference-only index at [integrations/README.md](integrations/README.md). No live technical connections or automatic synchronization are configured. |
@@ -29,6 +30,14 @@
 | Competency Register | — | Active | Initialized; no imported or assessed competency entries yet. |
 | Repository quality checks | — | Active | Markdown lint and link validation run on pushes, pull requests and manual dispatch. |
 | `main` branch protection | — | Not enabled by design | No mandatory branch protection/ruleset is configured. This is an intentional usability decision: avoid restrictive controls that previously disrupted the owner's workflow. CI continues to run on pushes and pull requests; PRs are the preferred change path, not a technical requirement. |
+
+## Proposed architecture update — not yet approved
+
+The branch `feat/knowledge-evidence-governance-v1` contains a proposed cross-cutting update:
+- `core/knowledge-and-evidence-governance.md` — canonical-source control, separate Learning State and E0–E5 Evidence Level, and a staged historical-migration protocol;
+- aligned Core, Skill, startup prompt, progress protocol and shared record templates.
+
+The proposal does not import historical records, change competency levels, alter the separate Dasha repository or Library, or designate the unresolved Dasha charter branch as an approved baseline. Current approved release remains v1.0.2 on `main` until review and an explicit merge.
 
 ## Profession module discovery pointers
 
