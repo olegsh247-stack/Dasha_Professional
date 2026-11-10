@@ -24,12 +24,13 @@ If two authoritative sources conflict, surface the conflict and do not silently 
 Load the compact orientation set first:
 
 1. current `PROJECT-STATUS.md` and `manifest.json`;
-2. the exact approved revisions of the Dasha charter and Cross-Project Learning System, using the source register and fingerprint; compare Library/plugin mirrors and report any mismatch;
-3. `core/knowledge-and-evidence-governance.md`;
-4. `core/README.md` and only the Core documents relevant to the current lesson;
-5. `learning-system/SKILL.md` and this protocol;
-6. the selected profession's current README, approved curriculum and profession-specific Skill;
-7. relevant profession-specific records and the latest relevant entries in the shared Learning Log and Competency Register.
+2. `core/source-authority-register.md`;
+3. the exact approved revisions of the Dasha charter and Cross-Project Learning System, using the register and fingerprint; compare Library/plugin mirrors and report any mismatch;
+4. `core/knowledge-and-evidence-governance.md`;
+5. `core/README.md` and only the Core documents relevant to the current lesson;
+6. `learning-system/SKILL.md` and this protocol;
+7. the selected profession's current README, approved curriculum and profession-specific Skill;
+8. relevant profession-specific records and the latest relevant entries in the shared Learning Log and Competency Register.
 
 Load detailed lessons, source packs, casebooks and additional Core documents only when needed to teach, verify evidence or resolve a conflict. Never omit the authoritative curriculum or records that establish the continuation point.
 
