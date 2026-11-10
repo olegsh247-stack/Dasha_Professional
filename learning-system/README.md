@@ -1,7 +1,8 @@
 # Professional Learning System
 
 **Status:** Approved — first edition approved 2026-11-10.  
-**Approved baseline:** v1.0.1.  
+**Initial approved baseline:** v1.0.1.  
+**Current component version:** v1.0.2 (approved).  
 **Current source:** `main` (see [manifest.json](../manifest.json)).
 
 ## Purpose
