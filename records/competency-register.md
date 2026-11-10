@@ -8,7 +8,7 @@ This register is a current cross-profession snapshot. Maintain separate evidence
 
 | Competency ID | Profession / module | Competency | Participant | State | Evidence reference | Assessment / date | Limits / confidence | Next step | Last reviewed |
 |---|---|---|---|---|---|---|---|---|---|
-| — | — | — | — | Not assessed | — | — | — | — | — |
+| — | — | — | — | — | — | — | — | — | — |
 
 ## State definitions
 
@@ -18,6 +18,7 @@ This register is a current cross-profession snapshot. Maintain separate evidence
 - **Practiced** — applied in exercises or simulations.
 - **Demonstrated achievement** — evidence checked against explicit criteria.
 - **Open question** — unresolved gap, contradiction or uncertainty.
+- **Future direction** — relevant development area not currently in the active plan.
 
 ## Import policy
 
