@@ -22,11 +22,13 @@
 | Professional Learning System | 1.0.1 | Approved | v1.0.0 baseline plus operational consistency refinements merged through PR #3 on 2026-11-10. |
 | Universal Learning Skill | 1.0.0 | Approved | No profession-specific curriculum is embedded in the Skill. |
 | Startup and progress protocol | 1.0.1 | Approved | Current-source guidance, compact two-level loading and complete unsaved-record fallback. |
-| Risk Management profession module | — | Not established on `main` | Historical files were observed on `feat/universal-learning-system`, deliberately excluded from PR #2 and PR #3. Their professional content and approval status are not assessed here. Verify in the profession's own workflow before use. |
+| Risk Management profession module | — | Not established on `main` | Historical files were observed on older feature branches and deliberately excluded from the approved Core and Learning System baseline. Their professional content and approval status are not assessed here. Verify in the profession's own workflow before use. |
 | Other profession modules | — | Not started | No approved modules are indexed on `main`. |
-| Integrations registry | — | Planned | No `integrations/` directory or registry currently exists. |
+| Integrations registry | 1.0 | Active | Reference-only index at [integrations/README.md](integrations/README.md). No live technical connections or automatic synchronization are configured. |
 | Shared Learning Log | — | Active | Baseline program decision recorded; detailed historical lesson records have not been imported. |
 | Competency Register | — | Active | Initialized; no imported or assessed competency entries yet. |
+| Repository quality checks | — | Active | Markdown lint and link validation run on pushes, pull requests and manual dispatch. |
+| `main` branch protection | — | Pending configuration | The current GitHub integration exposes read access but no branch-protection/ruleset write action. Configure PR-only and required CI checks in GitHub repository settings; no mandatory review is specified. |
 
 ## Source-of-truth rules
 
