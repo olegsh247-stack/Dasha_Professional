@@ -4,13 +4,13 @@
   "repository": "olegsh247-stack/Dasha_Professional",
   "current_source": {
     "branch": "main",
-    "approved_baseline_commit": "2ee9fb8cdb80c8b797356e44d36974c340271ea5",
-    "note": "The approved v1.0.1 predecessor baseline was finalized in PR #4 on 2026-11-10. The v1.0.2 consistency update is proposed in PR #9; component fingerprints below identify the exact files in that candidate."
+    "approved_baseline_commit": "958edccb50b91045a7ef0e68b6f35d744edbc300",
+    "note": "Approved v1.0.2 release finalized in PR #9 on 2026-11-10. Component fingerprints identify the exact approved files on main."
   },
   "release": {
     "version": "1.0.2",
-    "status": "proposed",
-    "proposed_date": "2026-11-10",
+    "status": "approved",
+    "approved_date": "2026-11-10",
     "previous_version": "1.0.1"
   },
   "components": {
