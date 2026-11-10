@@ -10,26 +10,9 @@ This is a current cross-profession snapshot, not a narrative history. Maintain s
 |---|---|---|---|---|---|---|---|---|---|---|
 | — | — | — | — | — | E0 / Not mapped | — | — | — | — | — |
 
-## Learning State
+## State and evidence definitions
 
-- **Not started** — no learning activity recorded for this objective; not a judgment about prior knowledge.
-- **Studied** — material reviewed; practical competence not established.
-- **In progress** — structured learning activity underway.
-- **Practiced** — attempted in exercises, simulations or real tasks; quality and independence assessed separately.
-- **Demonstrated achievement** — a specified outcome checked against explicit criteria and linked evidence.
-- **Open question** — unresolved gap, contradiction or uncertainty.
-- **Future direction** — not currently active.
-
-## Evidence Level
-
-- **E0 — Not assessed:** no meaningful assessment.
-- **E1 — Exposure:** source/material and scope reviewed; familiarity only.
-- **E2 — Explained:** accurate explanation checked against reliable sources or a knowledgeable reviewer.
-- **E3 — Applied with assistance:** bounded task with material guidance, concrete contribution, reviewer feedback and outcome; simulation labelled.
-- **E4 — Independently applied:** bounded task completed with limited prompting; reproducible result and validation.
-- **E5 — Repeatably verified:** at least two distinct successful validations, including relevant failure/boundary cases.
-
-Evidence levels describe evidence strength, not credentials, licensing or authorization. Do not derive them from learning state, attendance, lesson count, confidence or ratings. Full criteria: [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md).
+Use the approved Learning State and E0–E5 definitions in [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md). This register stores the current values and their evidence pointers; it does not define a parallel scale.
 
 ## Provenance requirements
 
