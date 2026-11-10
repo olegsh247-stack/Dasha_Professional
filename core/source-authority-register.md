@@ -50,7 +50,7 @@ Do not treat the 2026-11-05 date alone as proof of canonical authority. Use only
 | GitHub blob SHA | `acbf537c15fa9efb1d37756a484c09ec7d64c32c` | `6f610c9d31f829fefa1c6dbba7553577a0063799` |
 | Library revision | v5.0 | v3.0 |
 | Comparison | **Differs**; GitHub contains later entries including MI-32 not present in the Library copy read during audit | **Exact text match** with GitHub branch copy in the comparison performed |
-| Main branch baseline | Older history; not the current detailed v5.0/v3.0 snapshot | Older history; not the current detailed v5.0/v3.0 snapshot |
+| Main branch baseline | v3.1, blob `72c90dba1b539857b913c56a6c13ee39764fd73f` | v2.5, blob `93ee6374897b188028fea6057381703ae2be51e4` |
 | Status | **Authority/synchronization unresolved** | **Authority/synchronization unresolved** |
 
 The archive branch is 332 commits ahead of `main`. The existence of v5.0/v3.0 on that branch and in Library does not by itself establish a released/approved cross-project baseline. The Learning Log Library/GitHub difference must be reconciled before migration. Preserve both copies and their unique entries.
