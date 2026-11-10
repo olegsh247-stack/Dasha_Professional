@@ -35,10 +35,10 @@
 
 The branch `feat/knowledge-evidence-governance-v1` contains a proposed cross-cutting update:
 - `core/knowledge-and-evidence-governance.md` — canonical-source control, separate Learning State and E0–E5 Evidence Level, and a staged historical-migration protocol;
-- `core/source-authority-register.md` — exact external source bindings, fingerprints and known discrepancies;
+- Appendix A of `core/knowledge-and-evidence-governance.md` — exact external source bindings, fingerprints and known discrepancies;
 - aligned Core, Skill, startup prompt, progress protocol and shared record templates.
 
-The proposal does not import historical records, change competency levels, alter the separate Dasha repository or Library, or designate an unresolved external record as an approved migration baseline. The Dasha charter itself is verified on the separate repository's `main` at version 2; its Library mirror is stale. See `core/source-authority-register.md`. Current approved release remains v1.0.2 on `main` until review and an explicit merge.
+The proposal does not import historical records, change competency levels, alter the separate Dasha repository or Library, or designate an unresolved external record as an approved migration baseline. The Dasha charter itself is verified on the separate repository's `main` at version 2; its Library mirror is stale. See Appendix A of `core/knowledge-and-evidence-governance.md`. Current approved release remains v1.0.2 on `main` until review and an explicit merge.
 
 ## Profession module discovery pointers
 
