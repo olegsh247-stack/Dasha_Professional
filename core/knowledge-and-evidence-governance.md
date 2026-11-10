@@ -1,6 +1,6 @@
 # Knowledge & Evidence Governance
 
-**Status:** Proposed — not approved until this change is reviewed and merged.
+**Status:** Approved — adopted in PR #11, merged to `main` on 2026-11-10.
 **Version:** 1.0.0
 **Purpose:** Define one operational contract for canonical sources, learning states, evidence levels and safe migration of historical learning records across Dasha projects.
 
