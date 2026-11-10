@@ -25,12 +25,13 @@ Pushes to branches and pull requests run automated checks:
 - **Markdown lint:** `markdownlint-cli2` checks repository Markdown against the shared configuration in `.markdownlint-cli2.jsonc`.
 - **Link validation:** Lychee checks Markdown links, including relative repository paths and reachable external URLs.
 
-Both checks must pass before a change is considered ready for approval. A transient external-service failure should be investigated and rerun; do not silently disable link validation to make a check green.
+Both checks should pass before a change is considered complete. A transient external-service failure should be investigated and rerun; do not silently disable link validation to make a check green.
 
 ## Working rules
 
 - Use the current approved version on `main`, unless a project instruction explicitly names another ref.
-- Make changes on a dedicated branch and review them through a pull request.
+- Prefer a dedicated branch and pull request for planned changes. Direct changes to `main` remain permitted; branch protection is intentionally not enabled.
+- CI runs on pushes and pull requests; it is a quality signal, not a technical merge lock.
 - Never claim that chats, GitHub, Library or plugins synchronize automatically.
 - Verify every repository write by reading the saved content back.
 - Do not make production, destructive or externally consequential changes without explicit authorization.
