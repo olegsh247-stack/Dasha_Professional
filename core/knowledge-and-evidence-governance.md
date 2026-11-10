@@ -1,7 +1,7 @@
 # Knowledge & Evidence Governance
 
 **Status:** Approved — adopted in PR #11, merged to `main` on 2026-11-10.
-**Version:** 1.0.1
+**Version:** 1.0.1 (proposed; pending approval)
 **Purpose:** Define one operational contract for canonical sources, learning states, evidence levels and safe migration of historical learning records across Dasha projects.
 
 ## 1. Scope and governing principle
@@ -270,39 +270,39 @@ The source binding is sufficient to identify the current GitHub content. Do not 
 
 ### A.3 Central Learning Log and Competency Register — audit snapshot 2026-11-10
 
-The following are verified source candidates and observed copies, **not owner-approved migration baselines**.
+The following are verified source candidates and observed copies, **not owner-approved migration baselines**. The comparison counts below use normalized nonblank lines with trailing whitespace removed; they are distinct-line set differences, not a semantic equivalence test.
 
 | Field | Learning Log | Competency Register |
 |---|---|---|
 | Owner repository | `olegsh247-stack/Dasha` | `olegsh247-stack/Dasha` |
 | GitHub `main` snapshot | v3.1; blob `72c90dba1b539857b913c56a6c13ee39764fd73f`; 166,211 characters | v2.5; blob `93ee6374897b188028fea6057381703ae2be51e4`; 15,536 characters |
-| Archive-branch snapshot | `docs/restore-module-iii-archive-2026-11-06-current`; v5.0; blob `7ee8e2206f48f648b92268100ab700d6b5cc420d`; 262,289 characters / 1,314 lines | Same branch; v3.0; blob `6f610c9d31f829fefa1c6dbba7553577a0063799`; 18,573 characters |
-| Library current copy | `Dasha-Learning-Log.md`; v5.0; last modified 2026-11-10 19:02:56 UTC; 202,128 characters / 1,000 lines | `Dasha-Competency-Register.md`; v3.0; last modified 2026-11-07 19:31:41 UTC; 18,573 characters |
-| GitHub archive ↔ Library comparison | **Not identical.** Normalized nonblank-line comparison: 235 lines occur only in GitHub and 14 only in Library; GitHub has 93 headings versus 68 in Library. | **Exact text match** in the comparison performed; no unique Library-only or GitHub-only nonblank lines were found. |
-| Main-branch status | v3.1 is older than the v5.0 archive candidate | v2.5 is older than the v3.0 archive candidate |
+| Archive-branch snapshot | `docs/restore-module-iii-archive-2026-11-06-current`; v5.0; blob `81c28c3acb22c40c467e193ecd309ede60806efa`; 263,927 characters | Same branch; v3.1; blob `a6a6c11339b1d9b43764c70b46aa33e4f9b4d2d5`; 18,944 characters |
+| Library current copy | `Dasha-Learning-Log.md`; v5.0; last modified 2026-11-10 19:02:56 UTC; 202,128 extracted characters / 1,000 lines | `Dasha-Competency-Register.md`; v3.0; last modified 2026-11-07 19:31:41 UTC; 18,573 extracted characters |
+| GitHub archive ↔ Library comparison | **Not identical.** Distinct normalized nonblank lines: 242 only in GitHub and 14 only in Library; 100 GitHub headings versus 74 Library headings. | **Not identical.** Distinct normalized nonblank lines: 3 only in GitHub and 2 only in Library. |
+| Main-branch status | v3.1 is older than the v5.0 archive candidate | v2.5 is older than the v3.1 archive candidate |
 | Authority / migration status | **Unresolved** | **Unresolved** |
 
 #### Learning Log reconciliation findings
 
-- The archive-branch v5.0 contains full learning and archive records for MI-06…MI-17 that are absent as entries in the current Library v5.0 copy.
+- The archive-branch v5.0 contains full lesson and archive records for MI-06…MI-17 that are absent as standalone MI entries in the current Library v5.0 copy.
 - The GitHub log includes a separate 2026-11-08 MI-22 full-original recovery entry; the Library log has the earlier MI-22 record but not that separate recovery entry.
-- MI-26 differs materially: GitHub has a 2026-11-09 record titled “Наследник и хранитель капитала”; Library retains the older 2026-11-04 entry about family succession and professional boundaries. Both versions contain useful provenance and case details and must be reconciled, not overwritten.
-- MI-18 and MI-19 contain wording variants. These should be compared at entry level; a line-count or file-size comparison is not a substitute for semantic reconciliation.
+- MI-26 differs materially: GitHub has a 2026-11-09 record titled “Наследник и хранитель капитала”; Library retains the earlier 2026-11-04 entry about family succession and professional boundaries. Both versions contain useful provenance and case details and must be reconciled, not overwritten.
+- MI-18 and MI-19 contain wording and source-status variants. Compare them at entry level; a line-count or file-size comparison is not a substitute for semantic reconciliation.
 - The Library `Dasha-Sync-Gap-Register.md` has a 2026-11-09 top-level snapshot that still describes Learning Log v3.4 / Competency Register v2.7 and declares central synchronization complete, while later appended notes run through MI-33. Its initial summary is stale relative to the current Library masters and must not be used as proof of exact synchronization.
-- The Library `Dasha-Archive-Index.md` identifies Learning Log v5.0 and Competency Register v3.0 as current masters and points to the archive branch. This is useful evidence of intended source selection, but it is not a formal owner approval or release record.
+- The Library `Dasha-Archive-Index.md` identifies Learning Log v5.0 and Competency Register v3.0 as current masters and points to the archive branch. This is useful evidence of intended source selection, but it is not a formal owner approval or release record; it is now stale for the archive-branch Competency Register, which has advanced to v3.1.
 - Archive-branch `docs/continuity/CURRENT-STATE.md` is dated 2026-11-05; it is a historical progress snapshot, not a current 2026-11-10 state source.
 
 #### Competency Register reconciliation findings
 
-- The archive-branch v3.0 and Library v3.0 copies have matching text and file length in the comparison performed.
-- The GitHub `main` v2.5 copy is older. Do not use it as the current register when the v3.0 candidate is under review.
+- The archive-branch v3.1 and Library v3.0 copies are **not identical**. The GitHub copy adds a v3.1 change-history entry and updates the situational-thinking evidence from eight to thirteen complete original lessons; the Library copy retains the earlier eight-lesson evidence statement.
+- The GitHub `main` v2.5 copy is older. Neither v3.0 Library nor v3.1 archive snapshot is yet an owner-approved migration baseline.
 - The archive branch also contains `docs/learning/COMPETENCY-REGISTER-ADDENDUM-2026-11-03.md` (blob `3e63c48435d8da29cc258f30319ecf58645a5a85`). It records a process correction and explicitly states that no competency level is promoted. Preserve it as a supplementary evidence artifact; do not treat it as a separate register or as authority to promote a level.
 
 #### Candidate-source decision and remaining approval
 
-For the next reconciliation pass, use the archive-branch v5.0 Learning Log and v3.0 Competency Register as **working candidates only**, because the Library Archive Index points to that branch and the Library register matches it. Do not promote either candidate to an approved baseline until the owner explicitly approves the exact repository, branch, paths, blob SHAs and the reconciled Learning Log delta.
+For the next reconciliation pass, use the archive-branch v5.0 Learning Log and v3.1 Competency Register as **working candidates only**. The Library Archive Index points to that branch, but its register version pointer is stale; the Library copies retain distinct content and chronology. Do not promote either candidate to an approved baseline until the owner explicitly approves the exact repository, branch, paths, blob SHAs and the reconciled deltas for both documents.
 
-The Library Learning Log is not a byte-for-byte or text-equivalent mirror of the archive-branch log. Preserve both snapshots. No automatic overwrite, silent deduplication, historical deletion, competency-level promotion or migration is permitted.
+The Library Learning Log and Competency Register are not exact mirrors of the current archive-branch snapshots. Preserve all snapshots. No automatic overwrite, silent deduplication, historical deletion, competency-level promotion or migration is permitted.
 
 ### A.4 Rules for consumers
 
