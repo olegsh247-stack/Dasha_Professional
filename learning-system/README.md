@@ -13,16 +13,17 @@ A reusable system for launching and conducting structured professional education
 
 1. **Core** — identity, principles, universal methodology, quality, governance and knowledge-management rules.
 2. **Professional Learning System** — universal learning behavior, startup protocol, module template and progress protocol.
-3. **Profession module** — profession-specific curriculum, competencies, standards, sources, cases, exercises and assessment criteria.
-4. **Records** — shared Learning Log and Competency Register, plus profession-specific evidence and detailed learning artifacts.
+3. **Knowledge & Evidence Governance** — exact source authority, separate Learning State and E0–E5 Evidence Level, and provenance-safe migration rules.
+4. **Profession module** — profession-specific curriculum, competencies, standards, sources, cases, exercises and assessment criteria.
+5. **Records** — shared Learning Log and Competency Register, plus profession-specific evidence and detailed learning artifacts.
 5. **Independent project integrations** — reference-only links in the active [integrations registry](../integrations/README.md). Independent projects remain their own sources of truth; no live technical connections or automatic synchronization are implied.
 
-## Governing Library documents
+## Governing cross-project documents
 
-- `dasha-personality-development-and-competencies.md` — canonical Dasha identity and long-term development charter.
-- `LEARNING-SYSTEM.md` — cross-project learning, knowledge transfer and centralization rules.
+The Dasha charter and Cross-Project Learning System are owned by the separate Dasha project. Their exact approved repository/path/ref/version/status/fingerprint must be verified before use. Library and plugin copies are mirrors unless an explicit authority record says otherwise. A newer timestamp or a branch ahead of main is not approval.
 
-Load the latest verified versions from Library when available. The 2026-11-05 revision was the latest identified on 2026-11-10 and supersedes the 2026-11-04 copy. These documents are not automatically synchronized with this repository.
+The 2026-11-10 audit found a real mismatch: the GitHub Dasha charter version 2 on branch `docs/restore-module-iii-archive-2026-11-06-current` differs from Library version 1; the branch is not `main`. Its exact approved revision remains unresolved. Do not silently choose either copy or propagate one as approved. See [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md).
+
 
 ## Start a learning chat
 
