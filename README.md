@@ -9,12 +9,13 @@
 3. [Core](core/README.md) — Dasha's general identity, principles, methodology and governance.
 4. [Professional Learning System](learning-system/README.md) — reusable learning workflow.
 5. [Shared learning records](records/README.md) — cross-profession progress index.
+6. [Independent project integrations](integrations/README.md) — reference-only links and source-of-truth boundaries.
 
 ## Project boundaries
 
 - Professional modules live in `professions/` and define profession-specific knowledge and curricula.
-- Independent projects such as Psychology and Crypto remain their own sources of truth; this repository may link to them but does not copy their content.
-- Integrations are planned; no integrations registry is currently implemented.
+- Independent projects such as Psychology and Crypto remain their own sources of truth; this repository links to them without copying their content.
+- The [integrations registry](integrations/README.md) is a navigation and governance index, not a live synchronization layer.
 - A profession module is not considered available or approved merely because it exists on an old or separate branch. Check [PROJECT-STATUS.md](PROJECT-STATUS.md) and [manifest.json](manifest.json).
 
 ## Quality checks
