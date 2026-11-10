@@ -5,12 +5,11 @@
   "current_source": {
     "branch": "main",
     "approved_baseline_commit": "01e778def4e5e9ac005b8174e6b705dbb922934e",
-    "note": "Approved v1.1.1 content baseline: PR #14 merge commit 01e778def4e5e9ac005b8174e6b705dbb922934e. This patch corrects the audited source inventory for historical Learning Log and Competency Register snapshots. The archive-branch snapshots remain candidates pending explicit owner approval; no historical records were imported or migrated."
+    "note": "The current approved baseline remains v1.1.0 at PR #14 merge commit 01e778def4e5e9ac005b8174e6b705dbb922934e. This branch proposes v1.1.1 to refresh the audited source inventory; the archive-branch snapshots remain candidates pending explicit owner approval. No historical records were imported or migrated."
   },
   "release": {
     "version": "1.1.1",
-    "status": "approved",
-    "approved_date": "2026-11-10",
+    "status": "pending_approval",
     "previous_version": "1.1.0"
   },
   "components": {
@@ -46,7 +45,7 @@
     },
     "knowledge_evidence_governance": {
       "version": "1.0.1",
-      "status": "approved",
+      "status": "pending_approval",
       "entrypoint": "core/knowledge-and-evidence-governance.md",
       "blob_sha": "be2ff62c018765dabc3d2150f17aa476dab8725e"
     }
