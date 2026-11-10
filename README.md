@@ -8,13 +8,13 @@
 2. [Version manifest](manifest.json) — current release, source branch and file fingerprints.
 3. [Core](core/README.md) — Dasha's general identity, principles, methodology and governance, including [Knowledge & Evidence Governance](core/knowledge-and-evidence-governance.md).
 4. [Professional Learning System](learning-system/README.md) — reusable learning workflow.
-5. [Shared learning records](records/README.md) — cross-profession progress index.
+5. [Project-local learning records](records/README.md) — progress and evidence for learning programs maintained in this repository.
 6. [Independent project integrations](integrations/README.md) — reference-only links and source-of-truth boundaries.
 
 ## Project boundaries
 
 - Approved profession modules are stored in `professions/` when added; each module defines profession-specific knowledge and curricula. The directory may be absent while no approved modules are maintained on `main`.
-- Independent projects such as Psychology and Crypto remain their own sources of truth; this repository links to them without copying their content.
+- Independent projects such as Psychology and Crypto remain separate sources of truth for their own content, learning history and competency evidence. This repository may contain navigation links only; it does not copy, summarize, import or synchronize their records.
 - The [integrations registry](integrations/README.md) is a navigation and governance index, not a live synchronization layer.
 - A profession module is not considered available or approved merely because it exists on an old or separate branch. Check [PROJECT-STATUS.md](PROJECT-STATUS.md) and [manifest.json](manifest.json).
 
