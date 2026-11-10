@@ -130,6 +130,7 @@ Use transparent criteria and consistent scoring where scoring helps. Do not infl
 ## 9. Competency and progress states
 
 Use the shared states consistently:
+- **Not started** — no learning activity recorded.
 - **Studied** — material reviewed; not proof of practical mastery.
 - **In progress** — active learning.
 - **Practiced** — applied in exercises, simulations or real tasks.
