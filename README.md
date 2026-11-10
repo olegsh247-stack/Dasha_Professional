@@ -19,7 +19,7 @@
 
 ## Quality checks
 
-Pull requests and pushes to `main` run automated checks:
+Pushes to branches and pull requests run automated checks:
 
 - **Markdown lint:** `markdownlint-cli2` checks repository Markdown against the shared configuration in `.markdownlint-cli2.jsonc`.
 - **Link validation:** Lychee checks Markdown links, including relative repository paths and reachable external URLs.
