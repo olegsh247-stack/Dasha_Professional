@@ -19,29 +19,33 @@
 | Component | Version | Status | Notes |
 |---|---:|---|---|
 | Core | 1.1.0 | Approved | Includes the canonical-source and evidence-governance standard adopted in PR #11. |
-| Professional Learning System | 1.1.0 | Approved | Includes source-authority checks, independent Learning State and E0–E5 dimensions, provenance and strict project-local record boundaries. |
-| Universal Learning Skill | 1.1.0 | Approved | Aligned with the approved v1.1.0 manifest; exact-ref verification and dual-axis evidence rules are included. |
-| Startup and progress protocol | 1.1.0 | Approved | Aligned with the approved v1.1.0 manifest; canonical-source, provenance and project-local record rules are included. |
+| Professional Learning System | 1.1.0 | Approved | Current approved baseline; proposed project-local record-boundary correction is under review in PR #16. |
+| Universal Learning Skill | 1.1.0 | Approved | Current approved baseline; proposed project-local record-boundary correction is under review in PR #16. |
+| Startup and progress protocol | 1.1.0 | Approved | Current approved baseline; proposed project-local record-boundary correction is under review in PR #16. |
 | Risk Management profession module | — | Not established on `main` | A historical source pointer is listed below. Its professional content and approval status are not assessed by this repository audit; verify them in the profession's own authoritative workflow before use. |
 | Other profession modules | — | Not started | No other approved modules are indexed on `main`. |
 | Integrations registry | 1.0 | Active | Reference-only index at [integrations/README.md](integrations/README.md). No live technical connections or automatic synchronization are configured. |
-| Project-local Learning Log | — | Active | Records only learning events created within this repository. No cross-project history is included. |
-| Project-local Competency Register | — | Active | Initialized; tracks only competencies evidenced within this repository. |
+| Learning Log | — | Active | Current v1.1.0 baseline; proposed strict project-local boundary is under review in PR #16. |
+| Competency Register | — | Active | Current v1.1.0 baseline; proposed strict project-local boundary is under review in PR #16. |
 | Repository quality checks | — | Active | Markdown lint and link validation run on pushes, pull requests and manual dispatch. |
 | `main` branch protection | — | Not enabled by design | No mandatory branch protection/ruleset is configured. This is an intentional usability decision: avoid restrictive controls that previously disrupted the owner's workflow. CI continues to run on pushes and pull requests; PRs are the preferred change path, not a technical requirement. |
 
 ## v1.1.0 release record
 
-Approved on 2026-11-10. The release incorporates the cross-cutting knowledge and evidence governance architecture merged in PR #11 (commit `27d219f6e798c62c05bd1bc098bb3bf32d40748b`).
+Approved on 2026-11-10. The release incorporates the knowledge and evidence governance architecture merged in PR #11 (commit `27d219f6e798c62c05bd1bc098bb3bf32d40748b`).
 
 Included:
-- canonical-source authority rules;
+- canonical-source authority rules and source inventory;
 - independent Learning State and E0–E5 Evidence Level dimensions;
 - evidence attribution and provenance requirements;
-- project-local Learning Log and Competency Register boundaries;
-- aligned Core, Professional Learning System, Skill, startup prompt, progress protocol and local record templates.
+- historical migration controls, without authorizing or performing a migration;
+- aligned Core, Professional Learning System, Skill, startup prompt, progress protocol and record templates.
 
-No records or competency evidence from independent projects are included. No cross-project migration or synchronization is supported by this repository's recordkeeping policy. Independent projects retain their own records and sources of truth.
+No historical records were imported, no competency levels were changed, and no edits were made to the separate Dasha repository or Library.
+
+## Pending architecture correction
+
+PR #16 proposes to remove cross-project learning-record concepts and define `records/` as local exclusively to this repository. The proposed changes are not part of the approved v1.1.0 release and must not be treated as active until reviewed and merged.
 
 ## Profession module discovery pointers
 
