@@ -2,92 +2,87 @@
 
 ## 1. Purpose
 
-Preserve learning continuity across separate chats and professions without repeatedly asking the user for information already recorded. This protocol defines what to read, where facts live, how progress is evidenced and how updates are saved.
+Preserve continuity across learning chats for professions maintained in `Dasha_Professional`, without repeatedly asking the user for information already recorded. This protocol defines what to read, where local facts live, how progress is evidenced and how updates are saved.
 
-## 2. Governing rules and source-of-truth hierarchy
+## 2. Project boundary and sources of truth
 
-The Dasha charter and Cross-Project Learning System govern identity and cross-project learning only at their exact approved revisions. Verify repository/system, path, ref, version, status and fingerprint; Library/plugin copies are mirrors unless explicitly designated canonical. Approved Core and [Knowledge & Evidence Governance](../core/knowledge-and-evidence-governance.md) govern shared recordkeeping. If copies conflict or no approved ref is identifiable, record the conflict and pause only dependent actions; do not silently choose the newest copy.
+This protocol applies only to learning programs and records maintained in `olegsh247-stack/Dasha_Professional`.
 
-For factual claims, project decisions and learning evidence, use the most specific authoritative source:
+The Learning Log and Competency Register in this repository contain only learning events and competency evidence created here. They are not cross-project records. Never load another project's journal or competency register into these local records; never copy, summarize, reconstruct, migrate or synchronize another project's learning history here.
 
-1. **Profession/project source of truth** — approved curriculum, professional decisions, detailed cases and project-specific evidence.
-2. **Profession-specific learning artifacts** — lesson records, exercises, assessments and casebooks.
-3. **Shared Competency Register** — current cross-profession view of competency states and evidence pointers.
-4. **Shared Learning Log** — chronology of significant learning events and corrections.
-5. **Current chat** — provisional context until a durable record is saved.
-6. **Assistant recollection or inference** — never stronger than a recorded source; label as unverified.
+When the user explicitly switches to an independent project, stop applying this repository's recordkeeping workflow and follow that project's own instructions and sources of truth. An integration link is navigation only.
+
+For learning within this repository, use the most specific authoritative source:
+1. approved profession module and its current curriculum;
+2. profession-specific lesson records, exercises, assessments and artifacts stored with that module;
+3. this repository's local Competency Register;
+4. this repository's local Learning Log;
+5. current chat, as provisional context until a durable local record is saved;
+6. assistant recollection or inference, labelled unverified.
 
 If two authoritative sources conflict, surface the conflict and do not silently overwrite either one.
 
 ## 3. What to load at session start
 
 Load the compact orientation set first:
-
 1. current `PROJECT-STATUS.md` and `manifest.json`;
-2. Appendix A of `core/knowledge-and-evidence-governance.md`;
-3. the exact approved revisions of the Dasha charter and Cross-Project Learning System, using the register and fingerprint; compare Library/plugin mirrors and report any mismatch;
-4. `core/knowledge-and-evidence-governance.md`;
-5. `core/README.md` and only the Core documents relevant to the current lesson;
-6. `learning-system/SKILL.md` and this protocol;
-7. the selected profession's current README, approved curriculum and profession-specific Skill;
-8. relevant profession-specific records and the latest relevant entries in the shared Learning Log and Competency Register.
+2. `core/knowledge-and-evidence-governance.md`;
+3. `core/README.md` and only Core documents relevant to the current lesson;
+4. `learning-system/SKILL.md` and this protocol;
+5. selected profession's current README, approved curriculum and profession-specific Skill;
+6. relevant profession-specific records and the latest relevant entries in this repository's Learning Log and Competency Register.
 
-Load detailed lessons, source packs, casebooks and additional Core documents only when needed to teach, verify evidence or resolve a conflict. Never omit the authoritative curriculum or records that establish the continuation point.
+The Dasha identity charter may be consulted for identity context at its designated source. It is not a source of learning records for this repository. Do not load a separate Cross-Project Learning System as authority for this repository's records.
 
-## 4. Recovery when progress records are incomplete or inconsistent
+Load detailed lessons, source packs, casebooks and additional Core documents only when needed. Never omit the authoritative curriculum or local records that establish the continuation point.
 
-Do not restart a program or repeat a lesson merely because one record is missing. Recover the continuation point systematically:
+## 4. Recovery when local progress records are incomplete or inconsistent
 
 1. Identify the latest authoritative approved curriculum and its version.
-2. Search the profession-specific lesson, casebook and assessment records for the latest completed activity and its evidence.
-3. Compare that evidence with the shared Learning Log and Competency Register. Use the records for their defined roles: the log is chronological, the register is a current snapshot, and profession-specific artifacts hold detailed evidence.
+2. Search the selected profession module's own lesson, casebook and assessment records for the latest completed activity and evidence.
+3. Compare those artifacts with this repository's local Learning Log and Competency Register. Do not compare them with unrelated project records.
 4. Check the current chat for additional material, but label unsaved information as provisional.
-5. Build a short recovery snapshot with three explicit categories:
-   - **Confirmed** — directly supported by an accessible authoritative record or artifact.
+5. Build a short recovery snapshot:
+   - **Confirmed** — directly supported by an accessible authoritative local record or artifact.
    - **Inferred** — plausible from partial evidence but not independently confirmed.
    - **Unknown / conflicting** — missing, inaccessible or inconsistent information.
-6. Resume from the latest confirmed point. Do not repeat confirmed completed work. If the next activity depends on an unresolved conflict or an unconfirmed prerequisite, pause only that dependent step and ask one focused question; otherwise continue while clearly marking the limitation.
-7. If no reliable completion point can be established, do not invent one or silently restart. Explain the narrow uncertainty and offer the smallest diagnostic check or recap needed to establish the next step.
+6. Resume from the latest confirmed point. Do not repeat confirmed completed work. Pause only a step that depends on unresolved information.
+7. If no reliable completion point can be established, explain the narrow uncertainty; do not invent one or silently restart.
 
-Never promote an inferred or provisional activity into a completed lesson, assessment result or competency achievement without evidence.
+Never promote inferred or provisional activity into a completed lesson, assessment result or competency achievement without evidence.
 
-## 5. Shared Learning Log format
+## 5. Local Learning Log format
 
-Append one concise entry for each meaningful milestone:
-
-- **Event ID:**
-- **Date:**
-- **Profession/module:**
-- **Lesson or activity:**
+Append one concise entry for each meaningful milestone that occurs in this repository's learning program:
+- **Event ID and date**
+- **Profession/module and lesson or activity**
 - **Participant:** user / Dasha / joint
-- **Learning State:** if applicable
+- **Learning State**, if applicable
 - **Evidence Level before → after:** E0–E5 or Not mapped
-- **Learning outcome:**
-- **Evidence or artifact:**
-- **Assessment and result:**
-- **Corrections / open questions:**
-- **Next step:**
-- **Saved at / source reference:** exact repository/path/ref/version/fingerprint where available
-- **Original event ID / migration batch:** if imported
+- **Learning outcome**
+- **Evidence/artifact:** local path or exact source reference
+- **Assessment and result**
+- **Corrections / open questions**
+- **Next step**
+- **Saved at / readback verification**
 
-The log is chronological. Do not rewrite old entries merely to make the history look cleaner; record corrections as new events and preserve provenance.
+Do not add entries about learning events from another project, including short summaries or reconstructed histories.
 
-## 6. Competency Register format
+## 6. Local Competency Register format
 
-Maintain one row per competency and participant, where appropriate:
+Maintain one row per competency and participant for professions maintained in this repository:
+- Competency ID and name;
+- profession/module;
+- participant;
+- Learning State;
+- Evidence Level (E0–E5 or Not mapped);
+- local evidence references and assessment criteria;
+- assessment method and date;
+- confidence/limitations;
+- next development step;
+- last reviewed.
 
-- **Competency ID and name**
-- **Profession/module**
-- **Participant**
-- **Learning State:** Not started / Studied / In progress / Practiced / Demonstrated achievement / Open question / Future direction
-- **Evidence Level:** E0 / E1 / E2 / E3 / E4 / E5 (or Not mapped)
-- **Evidence references and exact source provenance**
-- **Assessment method and date**
-- **Confidence/limitations**
-- **Next development step**
-- **Last reviewed**
-
-The register is a current snapshot, not a second narrative journal. Every demonstrated achievement must point to evidence and criteria.
+The register is a current snapshot, not a second narrative journal. Every demonstrated achievement must point to local evidence and criteria.
 
 ## 7. Evidence rules
 
@@ -95,19 +90,18 @@ Learning State and Evidence Level are independent dimensions. Apply the E0–E5 
 
 ## 8. End-of-session update
 
-At the end of a meaningful lesson or milestone:
-
+At the end of a meaningful lesson or milestone within this repository:
 1. summarize the learning outcome;
 2. capture answers, practical artifacts and assessment;
 3. record corrections and unresolved questions;
-4. update only affected competency entries;
-5. append a Learning Log event;
+4. update only affected local competency entries;
+5. append a local Learning Log event;
 6. identify the next lesson or unfinished task;
-7. save to the authorized source and read the saved content back.
+7. save to the authorized local repository and read the saved content back.
 
 ### Required fallback when repository write access is unavailable
 
-Do not stop at saying that saving failed. Produce a complete, copy-ready update in the conversation using this structure:
+Provide a complete, copy-ready update labelled:
 
 ```text
 LEARNING RECORD — NOT SAVED
@@ -121,24 +115,18 @@ Learning outcome:
 Evidence / artifact:
 Assessment and result:
 Corrections / open questions:
-Competency changes (ID, participant, old state → new state, evidence):
+Competency changes:
 Next step:
-Intended destination:
+Intended local destination:
 Reason not saved:
 ```
 
-Include the actual lesson outcome and evidence, not placeholders, whenever that information is available. If a field is genuinely unknown, mark it `unknown` rather than inventing it. Clearly state that the record has not been written to GitHub or Library. The user should be able to transfer this record without reconstructing the lesson.
+Clearly state that the record has not been written. If a field is unknown, mark it `unknown`; do not invent it. Do not prepare a record for another project's repository under this protocol.
 
 ## 9. Avoiding repeated questions
 
-Before asking the user to restate a preference, background detail, prior decision or completed lesson, search relevant records and current project files. Ask only if information is absent, conflicting, outdated or materially ambiguous.
+Before asking the user to restate a preference, background detail, prior decision or completed lesson, search relevant local records and current project files. Ask only if information is absent, conflicting, outdated or materially ambiguous.
 
-## 10. Cross-profession transfer
+## 10. Synchronization
 
-Transfer a competency only when its meaning and evidence genuinely apply to the destination profession. Record the source profession, original evidence, limits and any additional validation required.
-
-## 11. Synchronization, provenance and historical migration
-
-No automatic synchronization is assumed between chats, GitHub, Library or plugins. Every saved update identifies exact target/source system, path, ref, version, date and fingerprint where available. Compare mirrors before claiming synchronization; preserve destination-only content.
-
-Historical imports must follow `core/knowledge-and-evidence-governance.md`: freeze source snapshots; inventory every record; preserve original IDs, event dates, authorship, participant, exact path/ref/fingerprint and artifact lineage; classify originals, supporting evidence, summaries, reconstructions, superseded items, duplicates and conflicts; map Learning State and Evidence Level independently; import only after explicit batch review; verify counts, IDs, links and source integrity. Do not rewrite source originals, silently deduplicate, or retroactively promote evidence. A missing historical record in the shared system is not evidence that the learning never occurred.
+No automatic synchronization is assumed between chats, GitHub, Library or plugins. Every saved update identifies its local destination and is verified by readback. This protocol does not authorize cross-project record synchronization, copying or migration.
