@@ -17,7 +17,7 @@ At the beginning of a learning chat, retrieve the current versions of:
 
 1. The exact approved revision of the Dasha charter, resolved through the owning project's source register. Its designated repository/path/ref/version/fingerprint must be checked; a Library copy is a mirror unless explicitly designated otherwise.
 2. The exact approved revision of Cross-Project Learning System (LEARNING-SYSTEM.md), likewise checked by source ref, version, status and fingerprint. Do not select a copy solely by Library date or filename.
-3. core/source-authority-register.md — exact source bindings, versions, fingerprints and open discrepancies.
+3. Appendix A of core/knowledge-and-evidence-governance.md — exact source bindings, versions, fingerprints and open discrepancies.
 4. core/knowledge-and-evidence-governance.md — canonical-source, Learning State, E0–E5 and migration rules.
 5. core/README.md;
 6. relevant Core documents: identity, principles, methodology, quality, error management, communication, knowledge management and governance;
