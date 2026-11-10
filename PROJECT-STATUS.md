@@ -2,7 +2,8 @@
 
 **Repository:** `olegsh247-stack/Dasha_Professional`  
 **Current approved source:** `main`  
-**Current approved release:** v1.1.1  
+**Current approved release:** v1.1.0  
+**Proposed release:** v1.1.1 — Pending approval  
 **Approved:** 2026-11-10  
 
 ## Lifecycle definitions
@@ -22,7 +23,7 @@
 | Professional Learning System | 1.1.0 | Approved | Includes exact source-authority checks, independent Learning State and E0–E5 dimensions, provenance and migration controls. |
 | Universal Learning Skill | 1.1.0 | Approved | Aligned with the approved v1.1.0 manifest; exact-ref verification and dual-axis evidence rules are included. |
 | Startup and progress protocol | 1.1.0 | Approved | Aligned with the approved v1.1.1 manifest; canonical-source, provenance and migration rules are included. |
-| Knowledge & Evidence Governance | 1.0.1 | Approved | Updated audited source inventory for Learning Log and Competency Register; historical snapshots remain candidates pending owner approval. |
+| Knowledge & Evidence Governance | 1.0.0 approved; 1.0.1 pending | Pending approval | Proposed source-inventory correction; historical snapshots remain candidates pending owner approval. |
 | Risk Management profession module | — | Not established on `main` | A historical source pointer is listed below. Its professional content and approval status are not assessed by this repository audit; verify them in the profession's own authoritative workflow before use. |
 | Other profession modules | — | Not started | No other approved modules are indexed on `main`. |
 | Integrations registry | 1.0 | Active | Reference-only index at [integrations/README.md](integrations/README.md). No live technical connections or automatic synchronization are configured. |
@@ -44,15 +45,15 @@ Included:
 
 No historical records were imported, no competency levels were changed, and no edits were made to the separate Dasha repository or Library. Unresolved external source bindings remain unresolved and must not be treated as approved migration baselines.
 
-## v1.1.1 release record
+## v1.1.1 proposed release record
 
-Approved on 2026-11-10 as a patch release. This release corrects the Appendix A.3 source inventory using exact GitHub blob fingerprints and current Library readbacks.
+Proposed on 2026-11-10 as a patch release; **pending explicit owner approval and merge**. This proposal corrects the Appendix A.3 source inventory using refreshed GitHub blob fingerprints and current Library readbacks.
 
 Included:
-- verified GitHub `main`, archive-branch and Library snapshots for the Learning Log and Competency Register;
-- explicit identification of Learning Log differences, including missing MI-06…MI-17 entries in the Library copy and the MI-22 / MI-26 reconciliation gaps;
-- confirmation that the Library Competency Register v3.0 matches the archive-branch v3.0 text;
-- a candidate-source decision that does not grant approval to the archive branch or authorize migration.
+- refreshed GitHub `main`, archive-branch and Library snapshots for the Learning Log and Competency Register;
+- explicit identification of Learning Log differences, including MI-06…MI-17 entries absent from the Library copy and the MI-22 / MI-26 reconciliation gaps;
+- confirmation that the current archive-branch Competency Register is v3.1 and differs from the Library v3.0 copy;
+- working-candidate identification without granting approval to either archive snapshot or authorizing migration.
 
 No Learning Log or Competency Register records were changed or imported. No competency levels were promoted. The exact source snapshots remain subject to explicit owner approval before migration.
 
