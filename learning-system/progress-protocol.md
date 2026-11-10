@@ -17,19 +17,20 @@ For factual claims, project decisions and learning evidence, use the most specif
 5. **Current chat** — provisional context until a durable record is saved.
 6. **Assistant recollection or inference** — never stronger than a recorded source; label as unverified.
 
-If two authoritative sources conflict, surface the conflict and do not silently overwrite either one. A general governance document does not override a more specific approved project decision or professional source on factual matters; conversely, project-specific facts do not silently rewrite Dasha's general operating rules.
+If two authoritative sources conflict, surface the conflict and do not silently overwrite either one.
 
 ## 3. What to load at session start
 
-Read in this order:
-1. governing Library documents and relevant Core documents;
-2. selected profession module and its current curriculum;
-3. latest relevant profession-specific learning record;
-4. shared Competency Register;
-5. latest relevant entries in shared Learning Log;
-6. unresolved tasks and prior chat context, if available.
+Load the compact orientation set first:
 
-Load only records relevant to the selected profession and its dependencies; do not dump the user's entire learning history into every chat.
+1. current `PROJECT-STATUS.md` and `manifest.json`;
+2. the two governing Library documents, if available;
+3. `core/README.md` and only the Core documents relevant to the current lesson;
+4. `learning-system/SKILL.md` and this protocol;
+5. the selected profession's current README, approved curriculum and profession-specific Skill;
+6. relevant profession-specific records and the latest relevant entries in the shared Learning Log and Competency Register.
+
+Load detailed lessons, source packs, casebooks and additional Core documents only when needed to teach, verify evidence or resolve a conflict. Never omit the authoritative curriculum or records that establish the continuation point.
 
 ## 4. Shared Learning Log format
 
@@ -67,47 +68,52 @@ The register is a current snapshot, not a second narrative journal. Every demons
 
 ## 6. Evidence rules
 
-Distinguish:
-- reading or exposure;
-- explanation in one's own words;
-- a single guided exercise;
-- independent application;
-- repeated performance under varied conditions;
-- external or independent assessment.
-
-A higher level requires stronger evidence. Do not infer durable mastery from attendance, a multiple-choice result alone, or one successful example. Record the scope and conditions under which performance was demonstrated.
-
-Keep Dasha's learning evidence separate from the user's. Joint work is not automatically proof that each participant can perform independently.
+Distinguish reading, explanation, guided exercise, independent application, repeated performance under varied conditions, and external or independent assessment. A higher level requires stronger evidence. Keep Dasha's learning evidence separate from the user's.
 
 ## 7. End-of-session update
 
 At the end of a meaningful lesson or milestone:
+
 1. summarize the learning outcome;
 2. capture answers, practical artifacts and assessment;
 3. record corrections and unresolved questions;
 4. update only affected competency entries;
 5. append a Learning Log event;
 6. identify the next lesson or unfinished task;
-7. save to the authorized source, then verify the saved content.
+7. save to the authorized source and read the saved content back.
 
-If the repository is unavailable or write permission is absent, produce the exact update in the chat and label it **NOT SAVED**. Do not claim that the central records have changed.
+### Required fallback when repository write access is unavailable
+
+Do not stop at saying that saving failed. Produce a complete, copy-ready update in the conversation using this structure:
+
+```text
+LEARNING RECORD — NOT SAVED
+Event ID:
+Date:
+Profession / module / version:
+Lesson or activity:
+Participant: user / Dasha / joint
+Learning objective:
+Learning outcome:
+Evidence / artifact:
+Assessment and result:
+Corrections / open questions:
+Competency changes (ID, participant, old state → new state, evidence):
+Next step:
+Intended destination:
+Reason not saved:
+```
+
+Include the actual lesson outcome and evidence, not placeholders, whenever that information is available. If a field is genuinely unknown, mark it `unknown` rather than inventing it. Clearly state that the record has not been written to GitHub or Library. The user should be able to transfer this record without reconstructing the lesson.
 
 ## 8. Avoiding repeated questions
 
-Before asking the user to restate a preference, background detail, prior decision or completed lesson:
-- search the relevant records;
-- check the current chat and available project files;
-- use the latest confirmed value;
-- ask only if the information is absent, conflicting, outdated or materially ambiguous.
-
-If a record is missing, ask for the smallest missing piece. Do not ask the user to reconstruct an entire history when a partial record or artifact can be recovered.
+Before asking the user to restate a preference, background detail, prior decision or completed lesson, search relevant records and current project files. Ask only if information is absent, conflicting, outdated or materially ambiguous.
 
 ## 9. Cross-profession transfer
 
-Transfer a competency only when its meaning and evidence genuinely apply to the destination profession. Record the source profession, original evidence, limits and any additional validation required. Similar names do not guarantee equivalent competencies.
+Transfer a competency only when its meaning and evidence genuinely apply to the destination profession. Record the source profession, original evidence, limits and any additional validation required.
 
 ## 10. Synchronization and versioning
 
-No automatic synchronization is assumed between chats, GitHub, Library or plugins. A synchronization claim requires a completed write and read-back verification.
-
-Every saved update should identify the target branch or source, date and relevant file. Preserve historical entries and use version control for changes. Do not overwrite profession-specific sources from the shared system.
+No automatic synchronization is assumed between chats, GitHub, Library or plugins. Every saved update should identify the target branch or source, date and relevant file. Preserve historical entries and use version control for changes. Do not overwrite profession-specific sources from the shared system.
